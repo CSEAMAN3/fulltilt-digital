@@ -15,7 +15,7 @@ export default function Hero() {
         </p>
         <Link
           href={"/contact"}
-          className="font-bold w-fit mx-auto mb-8 flex gap-2 group"
+          className="font-bold w-fit mx-auto mb-8 flex gap-2 group bg-brand-main py-4 px-8 rounded-full hover:bg-brand-main-dark transition-all duration-300"
         >
           Lets build something great
           {/* eslint-disable-next-line @next/next/no-img-element */}

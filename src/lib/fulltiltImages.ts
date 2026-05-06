@@ -1,0 +1,148 @@
+export const fulltiltImages = {
+  frdMockup: {
+    src: "first-response-drainage-laptop-mockup_qi7pcm.png",
+    alt: "laptop and phone display showing the 1st response drainage website design.",
+    width: 3027,
+    height: 1562,
+  },
+  amMockup: {
+    src: "am-norfolk-roofing-laptop-mockup_u3bxkm.png",
+    alt: "laptop and phone display showing the AM Norfolk Roofing Services website design.",
+    width: 3027,
+    height: 1562,
+  },
+  flowMockup: {
+    src: "flow-plumbing-drainage-laptop-mockup_nuzc16.png",
+    alt: "laptop and phone display showing the Flow Plumbing & Drainage website design.",
+    width: 3027,
+    height: 1562,
+  },
+  nhMockup: {
+    src: "nh-football-coaching-laptop-mockup_wyzxmn.png",
+    alt: "laptop and phone display showing the NH Football Coaching website design.",
+    width: 3027,
+    height: 1562,
+  },
+  techEdMockup: {
+    src: "tech-ed-laptop-mockup_d7xpaf.png",
+    alt: "laptop and phone display showing the NH Football Coaching website design.",
+    width: 3027,
+    height: 1562,
+  },
+  seoMockup: {
+    src: "seo-laptop-mockup_gw93if.png",
+    alt: "",
+    width: 3027,
+    height: 1562,
+  },
+  brandIdentity: {
+    src: "brand-identity_bnz2dd.png",
+    alt: "A branded construction image of a construction worker on site with graphical lines",
+    width: 1254,
+    height: 836,
+  },
+  videoPhoto: {
+    src: "fulltilt-photoshoot_tctdpb.jpg",
+    alt: "A young child playing football in a training session. Taken as part of a photography day for NH Football Coaching",
+    width: 1799,
+    height: 1199,
+  },
+  designIllustration: {
+    src: "design-illustration_ohwbh3.png",
+    alt: "An illustration of a villian taken a punch from a superhero with the text WHAK in the background",
+    width: 1254,
+    height: 836,
+  },
+  teamPhotoOne: {
+    src: "team-photo-one_nasejj.jpg",
+    alt: "team of creatives collaborating on a website project",
+    width: 1281,
+    height: 819,
+  },
+  teamPhotoTwo: {
+    src: "team-photo-two_sxmilw.jpg",
+    alt: "web developers discussing code whilst building a website",
+    width: 1254,
+    height: 836,
+  },
+  teamPhotoThree: {
+    src: "team-photo-three_l4ix98.jpg",
+    alt: "team creative meeting to discuss current projects",
+    width: 1254,
+    height: 836,
+  },
+  teamPhotoFour: {
+    src: "team-photo-four_sswvye.jpg",
+    alt: "Graphic designer working on a clients brand guidelines",
+    width: 1297,
+    height: 809,
+  },
+  teamPhotoFive: {
+    src: "team-photo-five_to4pnv.jpg",
+    alt: "team of creative collaborating on a design project",
+    width: 1254,
+    height: 836,
+  },
+  teamPhotoSix: {
+    src: "team-photo-six_yok3gc.jpg",
+    alt: "web development team woking on projects writing code to build websites for local businesses",
+    width: 1254,
+    height: 836,
+  },
+  teamPhotoSeven: {
+    src: "team-photo-seven-bw_bbohqe.jpg",
+    alt: "Fulltilt Digital graphic designer drawing illustrations",
+    width: 1313,
+    height: 799,
+  },
+  teamPhotoEight: {
+    src: "team-photo-eight-bw_dqesnu.jpg",
+    alt: "Fulltilt Digital photographer checking photo on camera",
+    width: 1254,
+    height: 836,
+  },
+  brandMain: {
+    src: "brandmain_d4kfjw.jpg",
+    alt: "AM Norfolk Roofing Services Brand Photo",
+    width: 1050,
+    height: 696,
+  },
+  frdBusinessCards: {
+    src: "branding-business-cards_ppvqmu.png",
+    alt: "First Response Drainage business card mock-up",
+    width: 1920,
+    height: 1080,
+  },
+  nhfcBranding: {
+    src: "nhfc-branding_p9e6zz",
+    alt: "NH Football Coaching business card mock-up",
+    width: 1920,
+    height: 1080,
+  },
+  nhfcPhoto: {
+    src: "og-image_kxw8in.jpg",
+    alt: "Photoshot of football coaching taking place in Norwich for NH Football Coaching",
+    width: 2500,
+    height: 1458,
+  },
+  hacked: {
+    src: "hackedStillSmall_iogkaj.jpg",
+    alt: "Two students chatting at a hackathon.",
+    width: 1920,
+    height: 1080,
+  },
+  nhfcScreenGrab: {
+    src: "nhfc-project-screenshot_bygeje.jpg",
+    alt: "NH Football Coaching web design",
+    width: 2826,
+    height: 6921,
+  },
+  nhfcMobileScreenGrab: {
+    src: "nhfc-project-mss_i8kv0q.jpg",
+    alt: "NH Football Coaching mobile web design",
+    width: 780,
+    height: 3124,
+  },
+};
+
+export type FulltiltImageKey = keyof typeof fulltiltImages;
