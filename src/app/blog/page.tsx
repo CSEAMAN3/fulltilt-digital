@@ -29,7 +29,7 @@ export default async function BlogPage() {
     <main className="">
       {/* add structured data regards schemas */}
       <div className="bg-linear-to-b from-brand-main to-transparent">
-        <div className="text-center grid place-content-center px-8 py-80">
+        <div className="text-center grid place-content-center px-8 pt-60 pb-40">
           <h1 className="font-bold text-balance mb-4 max-w-[24ch] text-[40px] sm:text-[60px] leading-none tracking-tight">
             Insights That Help Your Business Grow
           </h1>

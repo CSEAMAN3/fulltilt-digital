@@ -7,6 +7,8 @@ export default function Hero() {
       <div className="grid place-content-center pt-60 pb-8 px-8">
         <h1 className="font-bold text-balance text-[40px] sm:text-[60px] leading-none text-center tracking-tight max-w-[20ch] mx-auto mb-2 md:mb-4">
           Web Design. Branding. Visuals.
+          {/* A Web Design & Branding Agency
+          in Norfolk */}
         </h1>
         <p className="font-light text-center text-balance max-w-[60ch] md:text-lg mx-auto mb-4">
           We design, build and maintain fast, bespoke websites that help local

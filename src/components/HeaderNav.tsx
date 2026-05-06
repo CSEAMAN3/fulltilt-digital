@@ -281,7 +281,7 @@ export default function HeaderNav() {
         aria-expanded={toggleNav}
       >
         <motion.div
-          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-accent-one"
+          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-brand-accent-one rounded-full"
           style={{
             top: "0%",
             y: "0%",
@@ -301,7 +301,7 @@ export default function HeaderNav() {
           }}
         />
         <motion.div
-          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-accent-one"
+          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-brand-accent-one rounded-full"
           style={{
             top: "50%",
             y: "-50%",
@@ -317,7 +317,7 @@ export default function HeaderNav() {
           }}
         />
         <motion.div
-          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-accent-one"
+          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-brand-accent-one rounded-full"
           style={{
             top: "100%",
             y: "-100%",

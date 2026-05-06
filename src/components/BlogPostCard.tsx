@@ -31,12 +31,12 @@ export default function BlogPostCard({
   const background = useMotionTemplate`
     radial-gradient(
       500px circle at ${smoothX}px ${smoothY}px,
-      rgba(192, 144, 255, 0.28),
+      rgba(192, 144, 255, 0.48),
       transparent 45%
     ),
     radial-gradient(
       220px circle at ${smoothX}px ${smoothY}px,
-      rgba(255, 255, 255, 0.12),
+      rgba(255, 255, 255, 0.22),
       transparent 40%
     )
   `;

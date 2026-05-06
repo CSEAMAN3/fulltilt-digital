@@ -25,8 +25,8 @@ export default function HomePage() {
           </p>
         </div>
       </div>
-      <div className="grid gap-y-4 sm:grid-cols-2 px-16 max-w-132 sm:max-w-194 mx-auto">
-        <Link href={"/"} className="font-bold flex gap-x-2 group">
+      <div className="grid gap-y-4 sm:grid-cols-2 px-16 max-w-132 sm:max-w-210 mx-auto">
+        <Link href={"/"} className="font-bold flex gap-x-2 group w-fit">
           View Case Study
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -37,7 +37,7 @@ export default function HomePage() {
             className="group-hover:-rotate-45 transition-all duration-300"
           />
         </Link>
-        <Link href={"/"} className="font-bold flex gap-x-2 group">
+        <Link href={"/"} className="font-bold flex gap-x-2 group w-fit">
           View More Projects
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
