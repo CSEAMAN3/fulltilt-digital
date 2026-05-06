@@ -1,4 +1,4 @@
-// import ContactForm from "@/src/components/ContactForm";
+import ContactForm from "@/src/components/ContactForm";
 import Link from "next/link";
 
 export default function page() {
@@ -16,15 +16,17 @@ export default function page() {
       </div>
       <div className="px-8">
         <div className="bg-white p-8 relative -top-32 mx-auto shadow-lg max-w-240">
-          <h2 className="text-2xl text-balance mb-2 font-semibold">
+          <h2 className="text-2xl text-balance mb-2 font-semibold max-w-3xl mx-auto">
             Contact us today
           </h2>
-          <p className=" max-w-[60ch] mb-8 font-light">
-            Whether you&#39;re ready to get started or just exploring your
-            options, we&#39;re happy to talk things through and point you in the
-            right direction.
-          </p>
-          {/* <ContactForm /> */}
+          <div className="max-w-3xl mx-auto">
+            <p className=" max-w-[60ch] mb-8 font-light">
+              Whether you&#39;re ready to get started or just exploring your
+              options, we&#39;re happy to talk things through and point you in
+              the right direction.
+            </p>
+          </div>
+          <ContactForm />
           <div className="text-xs mt-8 grid gap-2">
             <p className="font-light">
               We always aim to respond to any enquiry within 24 hours Monday to
