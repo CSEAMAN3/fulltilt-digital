@@ -151,9 +151,9 @@ export default function ContactForm() {
           Step {step + 1} of {steps.length}
         </p>
 
-        <div className="h-2 w-full overflow-hidden rounded-full bg-foreground/10">
+        <div className="h-2 w-full overflow-hidden rounded-full bg-brand-main/10">
           <motion.div
-            className="h-full bg-accent-one"
+            className="h-full bg-brand-main"
             animate={{ width: `${progress}%` }}
             transition={{ duration: 0.3 }}
           />
@@ -197,7 +197,7 @@ export default function ContactForm() {
                 <h2 className="mb-3 text-3xl font-bold">
                   What can we help you with?
                 </h2>
-                <p className="mb-8 max-w-[60ch] text-background">
+                <p className="mb-8 max-w-[60ch] font-light">
                   Choose the service you&#39;re most interested in. If
                   you&#39;re not sure yet, that&#39;s fine too.
                 </p>
@@ -219,8 +219,8 @@ export default function ContactForm() {
                         }}
                         className={`rounded-sm border-2 px-4 py-4 text-left transition-colors duration-300 ${
                           isSelected
-                            ? "border-accent-one bg-accent-one/10"
-                            : "border-foreground/10 hover:border-accent-one"
+                            ? "border-brand-main bg-brand-main/10"
+                            : "border-brand-main/0 hover:border-brand-main"
                         }`}
                       >
                         <span className="font-bold">{option.label}</span>
@@ -242,7 +242,7 @@ export default function ContactForm() {
                 <h2 className="mb-3 text-3xl font-bold">
                   Tell us about your project
                 </h2>
-                <p className="mb-8 max-w-[60ch] text-background">
+                <p className="mb-8 max-w-[60ch] font-light">
                   What are you looking to achieve? What challenge are you trying
                   to solve?
                 </p>
@@ -269,7 +269,7 @@ export default function ContactForm() {
                 <h2 className="mb-3 text-3xl font-bold">
                   A few details about your business
                 </h2>
-                <p className="mb-8 max-w-[60ch] text-background">
+                <p className="mb-8 max-w-[60ch] font-light">
                   This helps us understand where you&#39;re at and how we can
                   help.
                 </p>
@@ -285,7 +285,7 @@ export default function ContactForm() {
                     <input
                       type="text"
                       id="business"
-                      className="max-w-[60ch] w-full border-2 border-transparent border-b-accent-one p-2 outline-0"
+                      className="max-w-[60ch] w-full border-2 border-transparent border-b-brand-main p-2 outline-0"
                       {...register("business")}
                     />
                     {errors.business?.message && (
@@ -306,7 +306,7 @@ export default function ContactForm() {
                     <input
                       type="text"
                       id="website"
-                      className="max-w-[60ch] w-full border-2 border-transparent border-b-accent-one p-2 outline-0"
+                      className="max-w-[60ch] w-full border-2 border-transparent border-b-brand-main p-2 outline-0"
                       {...register("website")}
                     />
                     {errors.website?.message && (
@@ -324,7 +324,7 @@ export default function ContactForm() {
                 <h2 className="mb-3 text-3xl font-bold">
                   How can we reach you?
                 </h2>
-                <p className="mb-8 max-w-[60ch] text-background">
+                <p className="mb-8 max-w-[60ch] font-light">
                   Leave your details below and we&#39;ll get back to you as soon
                   as we can.
                 </p>
@@ -341,7 +341,7 @@ export default function ContactForm() {
                       type="text"
                       id="name"
                       autoComplete="name"
-                      className="w-full border-2 border-transparent border-b-accent-one p-2 outline-0"
+                      className="w-full border-2 border-transparent border-b-brand-main p-2 outline-0"
                       {...register("name")}
                     />
                     {errors.name?.message && (
@@ -362,7 +362,7 @@ export default function ContactForm() {
                       type="text"
                       id="phone"
                       autoComplete="tel"
-                      className="w-full border-2 border-transparent border-b-accent-one p-2 outline-0"
+                      className="w-full border-2 border-transparent border-b-brand-main p-2 outline-0"
                       {...register("phone")}
                     />
                     {errors.phone?.message && (
@@ -383,7 +383,7 @@ export default function ContactForm() {
                       type="email"
                       id="email"
                       autoComplete="email"
-                      className="max-w-[60ch] w-full border-2 border-transparent border-b-accent-one p-2 outline-0"
+                      className="max-w-[60ch] w-full border-2 border-transparent border-b-brand-main p-2 outline-0"
                       {...register("email")}
                     />
                     {errors.email?.message && (
@@ -401,7 +401,7 @@ export default function ContactForm() {
                 <h2 className="mb-3 text-3xl font-bold">
                   A couple more details
                 </h2>
-                <p className="mb-8 max-w-[60ch] text-background">
+                <p className="mb-8 max-w-[60ch] font-light">
                   These are optional, but they help us reply more usefully.
                 </p>
 
@@ -409,13 +409,13 @@ export default function ContactForm() {
                   <div>
                     <label
                       htmlFor="budget"
-                      className="mb-1 block w-fit font-bold"
+                      className="mb-4 block w-fit font-bold"
                     >
                       Budget <span className="font-normal">(optional)</span>
                     </label>
                     <select
                       id="budget"
-                      className="selectPadding w-full border-2 border-transparent border-b-accent-one outline-0"
+                      className="selectPadding w-full border-2 border-transparent border-b-brand-main outline-0"
                       {...register("budget")}
                     >
                       <option value="">Select a budget</option>
@@ -430,13 +430,13 @@ export default function ContactForm() {
                   <div>
                     <label
                       htmlFor="timeline"
-                      className="mb-1 block w-fit font-bold"
+                      className="mb-4 block w-fit font-bold"
                     >
                       Timeline <span className="font-normal">(optional)</span>
                     </label>
                     <select
                       id="timeline"
-                      className="selectPadding w-full border-2 border-transparent border-b-accent-one outline-0"
+                      className="selectPadding w-full border-2 border-transparent border-b-brand-main outline-0"
                       {...register("timeline")}
                     >
                       <option value="">Select a timeline</option>
@@ -454,7 +454,7 @@ export default function ContactForm() {
             {step === 5 && (
               <div>
                 <h2 className="mb-3 text-3xl font-bold">Review your enquiry</h2>
-                <p className="mb-8 max-w-[60ch] text-background">
+                <p className="mb-8 max-w-[60ch] font-light">
                   Here&#39;s a quick summary before you send it through.
                 </p>
 
@@ -524,7 +524,7 @@ export default function ContactForm() {
             type="button"
             onClick={prevStep}
             disabled={step === 0 || isSubmitting}
-            className="rounded-sm border border-accent-one px-6 py-3 font-bold disabled:cursor-not-allowed disabled:opacity-40"
+            className="rounded-sm border border-brand-main-dark px-6 py-3 font-bold disabled:cursor-not-allowed disabled:opacity-40 cursor-pointer"
           >
             Back
           </button>
@@ -536,7 +536,7 @@ export default function ContactForm() {
                 e.preventDefault();
                 nextStep();
               }}
-              className="cursor-pointer rounded-sm bg-accent-one-dark px-8 py-4 font-bold text-white transition-colors duration-300 hover:bg-accent-one hover:text-background"
+              className="cursor-pointer rounded-sm bg-brand-main-dark px-8 py-4 font-bold text-white transition-colors duration-300 hover:bg-brand-main hover:text-black"
             >
               Continue
             </button>
@@ -546,7 +546,7 @@ export default function ContactForm() {
               onClick={handleSubmit(processForm, () =>
                 toast.error("Please check the form details and try again."),
               )}
-              className="cursor-pointer rounded-sm bg-accent-one-dark px-8 py-4 font-bold text-white transition-colors duration-300 hover:bg-accent-one hover:text-background"
+              className="cursor-pointer rounded-sm bg-brand-main-dark px-8 py-4 font-bold text-white transition-colors duration-300 hover:bg-brand-main hover:text-black"
               disabled={isSubmitting}
             >
               {isSubmitting ? "sending..." : "Send Message"}

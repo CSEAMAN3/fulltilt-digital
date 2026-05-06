@@ -144,7 +144,7 @@ export default function HeaderNav() {
       <motion.div animate={toggleNav ? "open" : "close"} initial="close">
         <motion.div
           id="mobile-navigation"
-          className="bg-brand-main fixed top-0 left-0 z-50 w-screen h-screen overflow-y-auto"
+          className="bg-brand-main-dark fixed top-0 left-0 z-50 w-screen h-screen overflow-y-auto"
           variants={overlayVariants}
         >
           <motion.div
