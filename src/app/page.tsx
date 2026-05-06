@@ -9,7 +9,7 @@ export default function HomePage() {
     <main>
       <Hero />
       <div className="max-w-300 sm:mx-auto px-8 w-fit grid gap-y-2 sm:grid-cols-2 mb-8">
-        <p className="font-bold text-4xl sm:max-w-[14ch] text-balance">
+        <p className="font-bold text-2xl sm:text-4xl sm:max-w-[14ch] text-balance">
           Super pleased with our brand refresh and new website.
         </p>
         <div className="grid gap-y-2">

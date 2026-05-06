@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="bg-linear-to-b from-brand-main to-transparent">
       <div className="grid place-content-center pt-60 pb-8 px-8">
-        <h1 className="font-bold text-balance text-3xl sm:text-4xl md:text-5xl text-center tracking-tight max-w-[28ch] mx-auto mb-2 md:mb-4">
+        <h1 className="font-bold text-balance text-[50px] sm:text-[60px] leading-none text-center tracking-tight max-w-[28ch] mx-auto mb-2 md:mb-4">
           Web Design, Branding, Visuals.
         </h1>
         <p className="font-light text-center text-balance max-w-[60ch] md:text-lg mx-auto mb-4">
