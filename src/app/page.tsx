@@ -3,12 +3,14 @@ import Hero from "../components/Hero";
 import HomeServicesSection from "../components/HomeServicesSection";
 import HomeContactSection from "../components/HomeContactSection";
 // import Image from "next/image";
+import { BiSolidQuoteLeft } from "react-icons/bi";
 
 export default function HomePage() {
   return (
     <main>
       <Hero />
-      <div className="max-w-300 mx-auto px-16 sm:px-8 w-fit grid gap-y-2 sm:grid-cols-2 mb-8">
+      <div className="relative max-w-300 mx-auto px-16 w-fit grid gap-2 sm:grid-cols-2 mb-8">
+        <BiSolidQuoteLeft className="absolute top-0 left-6 w-fit h-fit text-4xl" />
         <p className="font-bold text-4xl max-w-85 text-balance">
           Super pleased with our brand refresh and new website.
         </p>
@@ -23,7 +25,7 @@ export default function HomePage() {
           </p>
         </div>
       </div>
-      <div className="grid gap-y-4 sm:grid-cols-2 px-16 sm:px-8 max-w-132 sm:max-w-194 mx-auto">
+      <div className="grid gap-y-4 sm:grid-cols-2 px-16 max-w-132 sm:max-w-194 mx-auto">
         <Link href={"/"} className="font-bold flex gap-x-2 group">
           View Case Study
           {/* eslint-disable-next-line @next/next/no-img-element */}
