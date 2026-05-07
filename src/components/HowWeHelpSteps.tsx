@@ -37,7 +37,7 @@ export default function HowWeHelpSteps() {
                   {step.title}
                 </span>
                 <motion.span
-                  animate={{ rotate: isOpen ? 225 : 0 }}
+                  animate={{ rotate: isOpen ? 45 : 0 }}
                   transition={{ duration: 0.2 }}
                   className={`text-background group-hover:text-accent-three border border-black w-8 h-8 rounded-full grid place-content-center hover:bg-brand-main`}
                 >
@@ -67,7 +67,3 @@ export default function HowWeHelpSteps() {
     </div>
   );
 }
-
-//  <h6 className="font-bold tex-2xl">{step.title}</h6>
-//               {/* <p>{step.paragraph}</p> */}
-//               <button className="absolute h-12 w-12 right-2 top-1">+</button>
