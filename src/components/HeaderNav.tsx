@@ -233,7 +233,7 @@ export default function HeaderNav() {
                                     onClick={handleCloseNav}
                                     className={`gradient-link w-fit text-lg transition-colors duration-300 ${
                                       isServiceActive
-                                        ? "text-accent-one"
+                                        ? "text-brand-accent-one"
                                         : "text-black hover:text-brand-accent-one"
                                     }`}
                                   >

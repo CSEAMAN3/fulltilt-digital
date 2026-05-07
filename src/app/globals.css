@@ -6,6 +6,7 @@
   --brand-main: #c090ff;
   --brand-main-dark: #ae72fc;
   --brand-accent-one: #d1ebf0;
+  --brand-accent-one-dark: #b4d7db;
 }
 
 @theme inline {
@@ -14,6 +15,7 @@
   --color-brand-main: var(--brand-main);
   --color-brand-main-dark: var(--brand-main-dark);
   --color-brand-accent-one: var(--brand-accent-one);
+  --color-brand-accent-one-dark: var(--brand-accent-one-dark);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

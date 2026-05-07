@@ -1,7 +1,7 @@
 import ContactForm from "@/src/components/ContactForm";
 import Link from "next/link";
 
-export default function page() {
+export default function ContactPage() {
   return (
     <main>
       <div className="min-h-100 px-8 py-60 text-center bg-linear-to-b from-brand-main to-transparent">

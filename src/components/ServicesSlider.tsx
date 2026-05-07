@@ -133,10 +133,10 @@ export default function ServicesSlider() {
               ref={(node) => {
                 cardRefs.current[i] = node;
               }}
-              className="snap-start shrink-0 w-[70vw] sm:w-[50vw] md:w-[38vw] lg:w-[34vw] max-w-96 bg-brand-accent-one rounded-sm overflow-hidden relative group border border-[#c090ff]"
+              className="snap-start shrink-0 w-[70vw] sm:w-[50vw] md:w-[38vw] lg:w-[34vw] max-w-96 rounded-sm overflow-hidden bg-brand-accent-one relative group border border-[#c090ff]"
             >
               <Link
-                className="w-full px-8 pt-24 pb-8 block group"
+                className="w-full px-8 pt-24 pb-8 h-full block group hover:bg-brand-accent-one-dark transition-colors duration-300"
                 href={`/services/${s.slug}`}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
