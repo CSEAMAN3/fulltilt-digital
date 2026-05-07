@@ -171,10 +171,10 @@ export default function HeaderNav() {
                     <button
                       type="button"
                       onClick={() => setToggleServices((prev) => !prev)}
-                      className={`gradient-link flex w-fit items-center gap-3 font-bold text-4xl transition-colors duration-300 ${
+                      className={`gradient-link flex w-fit items-center gap-3 font-bold text-4xl transition-colors duration-300 cursor-pointer ${
                         isActive || hasActiveService
                           ? "text-accent-one"
-                          : "text-foreground"
+                          : "text-black hover:text-brand-accent-one"
                       }`}
                       aria-expanded={toggleServices}
                       aria-controls="services-submenu"
@@ -213,7 +213,7 @@ export default function HeaderNav() {
                                 className={`gradient-link w-fit text-lg font-semibold transition-colors duration-300 ${
                                   isActive
                                     ? "text-accent-one"
-                                    : "text-foreground"
+                                    : "text-black hover:text-brand-accent-one"
                                 }`}
                               >
                                 All Services
@@ -234,7 +234,7 @@ export default function HeaderNav() {
                                     className={`gradient-link w-fit text-lg transition-colors duration-300 ${
                                       isServiceActive
                                         ? "text-accent-one"
-                                        : "text-foreground"
+                                        : "text-black hover:text-brand-accent-one"
                                     }`}
                                   >
                                     {service.title}
@@ -256,7 +256,9 @@ export default function HeaderNav() {
                     href={item.href}
                     onClick={handleCloseNav}
                     className={`gradient-link w-fit font-bold text-4xl transition-colors duration-300 ${
-                      isActive ? "text-brand-accent-one" : "text-black"
+                      isActive
+                        ? "text-brand-accent-one"
+                        : "text-black hover:text-brand-accent-one"
                     }`}
                   >
                     {item.title}

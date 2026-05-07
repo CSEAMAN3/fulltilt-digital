@@ -42,3 +42,10 @@ export interface BlogPost {
 export interface BlogPostWithHtml extends BlogPost {
   contentHtml: string;
 }
+
+export type Steps = {
+  id: number;
+  title: string;
+  paragraph: string;
+  paragraphTwo: string;
+};

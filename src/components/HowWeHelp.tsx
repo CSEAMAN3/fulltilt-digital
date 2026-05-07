@@ -1,6 +1,9 @@
+import Image from "next/image";
+import HowWeHelpSteps from "./HowWeHelpSteps";
+
 export default function HowWeHelp() {
   return (
-    <div className="min-h-100 px-8">
+    <div className="min-h-100 px-8 mb-8">
       <h4 className="font-bold tracking-tight text-3xl sm:text-[40px] w-fit mx-auto text-center">
         <span className="block ml-12 w-fit text-2xl">Built better...</span>
         Built for local businesses
@@ -9,6 +12,14 @@ export default function HowWeHelp() {
         We&#39;re built to help local businesses win online - getting found,
         building trust and turning visitors into enquiries.
       </p>
+      <Image
+        src="/images/team-photo-seven-bw.jpg"
+        alt="update this"
+        width={1000}
+        height={500}
+        className="w-full h-auto max-w-240 max-h-160 object-cover mx-auto"
+      />
+      <HowWeHelpSteps />
     </div>
   );
 }
