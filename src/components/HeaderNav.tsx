@@ -256,7 +256,7 @@ export default function HeaderNav() {
                     href={item.href}
                     onClick={handleCloseNav}
                     className={`gradient-link w-fit font-bold text-4xl transition-colors duration-300 ${
-                      isActive ? "text-accent-one" : "text-foreground"
+                      isActive ? "text-brand-accent-one" : "text-black"
                     }`}
                   >
                     {item.title}
