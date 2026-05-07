@@ -4,6 +4,7 @@ import HomeServicesSection from "../components/HomeServicesSection";
 import HomeContactSection from "../components/HomeContactSection";
 // import Image from "next/image";
 import { BiSolidQuoteLeft } from "react-icons/bi";
+import HowWeHelp from "../components/HowWeHelp";
 
 export default function HomePage() {
   return (
@@ -11,7 +12,7 @@ export default function HomePage() {
       <Hero />
       <div className="relative max-w-300 mx-auto px-16 w-fit grid gap-2 sm:grid-cols-2 mb-8">
         <BiSolidQuoteLeft className="absolute top-0 left-6 w-fit h-fit text-4xl" />
-        <p className="font-bold text-4xl max-w-85 text-balance">
+        <p className="font-bold text-4xl max-w-85 text-balance tracking-tight">
           Super pleased with our brand refresh and new website.
         </p>
         <div className="grid gap-y-2">
@@ -50,6 +51,7 @@ export default function HomePage() {
         </Link>
       </div>
       <HomeServicesSection />
+      <HowWeHelp />
       <HomeContactSection />
     </main>
   );

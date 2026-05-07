@@ -10,7 +10,7 @@ export default function Header() {
           <img
             src="/images/logo-black.svg"
             alt="fulltilt digital logo"
-            className="w-56 h-auto"
+            className="w-50 h-auto"
           />
         </Link>
         <HeaderNav />

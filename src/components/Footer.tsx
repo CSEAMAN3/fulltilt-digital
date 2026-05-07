@@ -15,7 +15,7 @@ export default function Footer() {
             className="w-50 h-auto"
           />
         </Link>
-        <h6 className="text-lg mb-8 gradient-subheading w-fit font-bold">
+        <h6 className="text-lg mb-8 gradient-subheading w-fit font-bold tracking-tight">
           Built for growth. Built to perform.
         </h6>
         <div className="mb-8">
@@ -45,7 +45,7 @@ export default function Footer() {
             <div>
               <Link
                 href={"/contact"}
-                className="text-3xl font-bold gradient-link flex gap-4 group"
+                className="text-3xl font-bold gradient-link flex gap-4 group tracking-tight"
               >
                 Let&#39;s Talk
                 {/* eslint-disable-next-line @next/next/no-img-element */}
