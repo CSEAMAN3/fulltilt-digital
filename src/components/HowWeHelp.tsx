@@ -1,7 +1,7 @@
 export default function HowWeHelp() {
   return (
-    <div className="min-h-100">
-      <h4 className="font-bold tracking-tight text-[40px] w-fit mx-auto">
+    <div className="min-h-100 px-8">
+      <h4 className="font-bold tracking-tight text-3xl sm:text-[40px] w-fit mx-auto text-center">
         <span className="block ml-12 w-fit text-2xl">Built better...</span>
         Built for local businesses
       </h4>
