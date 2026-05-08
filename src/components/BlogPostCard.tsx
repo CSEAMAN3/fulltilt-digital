@@ -109,8 +109,11 @@ export default function BlogPostCard({
             {...Images[imageKey]}
             className="h-full object-cover mb-2"
           />
-          <p className="text-xs font-semibold text-accent-one mb-4">
-            Created by {post.author} - {formattedDate}
+          <p className="text-xs font-semibold text-accent-one mb-1">
+            Created by {post.author}
+          </p>
+          <p className="text-xs font-semibold text-accent-one">
+            {formattedDate}
           </p>
         </div>
       </div>
