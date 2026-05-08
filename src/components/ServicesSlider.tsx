@@ -150,13 +150,13 @@ export default function ServicesSlider() {
                   className="absolute bottom-0 right-0"
                 />
                 <Icon size={32} className={`absolute top-6 right-8`} />
-                <div className="relative z-10">
+                <div className="relative z-10 bg-white/30 backdrop-blur-[2px] p-4 rounded-md shadow-lg min-h-50">
                   <h3
                     className={`mb-2 text-lg font-bold transition-colors duration-300 `}
                   >
                     {s.name}
                   </h3>
-                  <p className="mb-8">{s.cardParas[1]}</p>
+                  <p className="mb-8 font-light">{s.cardParas[1]}</p>
                 </div>
                 <h6
                   className={`font-bold absolute bottom-4 transition-colors duration-300 flex gap-x-4`}
