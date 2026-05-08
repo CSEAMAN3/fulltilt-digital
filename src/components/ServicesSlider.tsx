@@ -136,25 +136,28 @@ export default function ServicesSlider() {
               className="snap-start shrink-0 w-[70vw] sm:w-[50vw] md:w-[38vw] lg:w-[34vw] max-w-96 rounded-sm overflow-hidden bg-brand-accent-one relative group border border-[#c090ff]"
             >
               <Link
-                className="w-full px-8 pt-24 pb-8 h-full block group hover:bg-brand-accent-one-dark transition-colors duration-300"
+                className="w-full px-8 pt-24 pb-24 h-full block group hover:bg-brand-accent-one-dark transition-colors duration-300"
                 href={`/services/${s.slug}`}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/purple-green-points-small.svg"
+                  src="/images/points-v2.svg"
+                  // src="/images/purple-green-points-small.svg"
                   // src="/images/shape.png"
                   alt=""
                   width={10}
-                  style={{ width: "140px", height: "auto" }}
+                  style={{ width: "240px", height: "auto" }}
                   className="absolute bottom-0 right-0"
                 />
                 <Icon size={32} className={`absolute top-6 right-8`} />
-                <h3
-                  className={`mb-2 text-lg font-bold transition-colors duration-300`}
-                >
-                  {s.name}
-                </h3>
-                <p className="mb-8">{s.cardParas[1]}</p>
+                <div className="relative z-10">
+                  <h3
+                    className={`mb-2 text-lg font-bold transition-colors duration-300 `}
+                  >
+                    {s.name}
+                  </h3>
+                  <p className="mb-8">{s.cardParas[1]}</p>
+                </div>
                 <h6
                   className={`font-bold absolute bottom-4 transition-colors duration-300 flex gap-x-4`}
                 >
