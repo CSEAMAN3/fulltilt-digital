@@ -1,4 +1,4 @@
-export default function page() {
+export default function ServicesPage() {
   return (
     <main className="">
       {/* add structured data regards schemas - this was pasted from another page may be relevant */}
