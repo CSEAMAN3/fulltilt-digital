@@ -141,10 +141,11 @@ export default function ServicesSlider() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/shape.png"
+                  src="/images/purple-green-points-small.svg"
+                  // src="/images/shape.png"
                   alt=""
                   width={10}
-                  style={{ width: "200px", height: "auto" }}
+                  style={{ width: "140px", height: "auto" }}
                   className="absolute bottom-0 right-0"
                 />
                 <Icon size={32} className={`absolute top-6 right-8`} />
