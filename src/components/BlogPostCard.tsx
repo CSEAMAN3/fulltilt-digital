@@ -56,6 +56,16 @@ export default function BlogPostCard({
       onMouseMove={handleMouseMove}
       className="group relative block w-full overflow-hidden rounded-xl border border-brand-main bg-brand-accent-one/50 p-12 transition-all duration-300 hover:border-brand-main/80 hover:bg-brand-accent-one/90 hover:shadow-[0_0_40px_rgba(192,144,255,0.18)]"
     >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/images/points-v2.svg"
+        // src="/images/purple-green-points-small.svg"
+        // src="/images/shape.png"
+        alt=""
+        width={10}
+        style={{ width: "240px", height: "auto" }}
+        className="absolute bottom-0 right-0"
+      />
       <motion.div
         className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
         style={{ background }}

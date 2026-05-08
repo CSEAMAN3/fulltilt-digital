@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { services } from "../lib/services";
 
 export default function ServicesSlider() {
@@ -103,20 +102,34 @@ export default function ServicesSlider() {
           type="button"
           onClick={goPrev}
           disabled={activeIndex === 0}
-          className="font-bold border border-brand-main-dark text-brand-main-dark px-4 py-2 rounded-sm hover:bg-foreground hover:text-foreground transition cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed w-fit"
+          className="font-bold border border-black text-black px-4 py-2 hover:bg-brand-main transition cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed w-12 h-12 rounded-full"
           aria-label="Previous Service"
         >
-          <IoIosArrowBack />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/arrow.svg"
+            alt=""
+            width={10}
+            style={{ width: "20px", height: "auto" }}
+            className="group-hover:-rotate-45 transition-all duration-300 scale-x-[-1]"
+          />
         </button>
 
         <button
           type="button"
           onClick={goNext}
           disabled={activeIndex === count - 1}
-          className="font-bold border border-brand-main-dark text-brand-main-dark px-4 py-2 rounded-sm hover:bg-foreground hover:text-foreground transition cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed w-fit"
+          className="font-bold border border-black text-black px-4 py-2 hover:bg-brand-main transition cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed w-12 h-12 rounded-full"
           aria-label="Next Service"
         >
-          <IoIosArrowForward />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/arrow.svg"
+            alt=""
+            width={10}
+            style={{ width: "20px", height: "auto" }}
+            className="group-hover:-rotate-45 transition-all duration-300"
+          />
         </button>
       </div>
       {/* scroller */}
