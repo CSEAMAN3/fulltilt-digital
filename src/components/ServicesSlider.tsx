@@ -136,7 +136,7 @@ export default function ServicesSlider() {
               className="snap-start shrink-0 w-[70vw] sm:w-[50vw] md:w-[38vw] lg:w-[34vw] max-w-96 rounded-sm overflow-hidden bg-brand-accent-one relative group border border-[#c090ff]"
             >
               <Link
-                className="w-full px-8 pt-24 pb-24 h-full block group hover:bg-brand-accent-one-dark transition-colors duration-300"
+                className="w-full px-8 pt-24 pb-16 h-full block group hover:bg-brand-accent-two transition-colors duration-300"
                 href={`/services/${s.slug}`}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -150,13 +150,13 @@ export default function ServicesSlider() {
                   className="absolute bottom-0 right-0"
                 />
                 <Icon size={32} className={`absolute top-6 right-8`} />
-                <div className="relative z-10 bg-white/30 backdrop-blur-[2px] p-4 rounded-md shadow-lg min-h-50">
-                  <h3
-                    className={`mb-2 text-lg font-bold transition-colors duration-300 `}
-                  >
-                    {s.name}
-                  </h3>
-                  <p className="mb-8 font-light text-balance">
+                <h3
+                  className={`mb-2 text-lg font-bold transition-colors duration-300 absolute top-16 left-8`}
+                >
+                  {s.name}
+                </h3>
+                <div className="relative z-10 grid place-content-center">
+                  <p className="mb-8 font-light text-balance text-shadow-brand-accent-one text-shadow-lg group-hover:text-shadow-brand-accent-two">
                     {s.cardParas[1]}
                   </p>
                 </div>
