@@ -1,6 +1,6 @@
 import { IconType } from "react-icons";
 import { FulltiltImageKey } from "./src/lib/fulltiltImages";
-// import { fulltiltImages } from "./src/lib/fulltiltImages";
+import { fulltiltImages } from "./src/lib/fulltiltImages";
 
 export type Nav = {
   title: string;
@@ -48,4 +48,19 @@ export type Steps = {
   title: string;
   paragraph: string;
   paragraphTwo: string;
+};
+
+type ServicesObj = {
+  service: string;
+  colour: string;
+};
+
+export type portfolioItem = {
+  name: string;
+  intro: string;
+  services: ServicesObj[];
+  mockup: {
+    src: keyof typeof fulltiltImages;
+    alt: string;
+  };
 };
