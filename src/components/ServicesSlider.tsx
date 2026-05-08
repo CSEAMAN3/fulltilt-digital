@@ -156,7 +156,9 @@ export default function ServicesSlider() {
                   >
                     {s.name}
                   </h3>
-                  <p className="mb-8 font-light">{s.cardParas[1]}</p>
+                  <p className="mb-8 font-light text-balance">
+                    {s.cardParas[1]}
+                  </p>
                 </div>
                 <h6
                   className={`font-bold absolute bottom-4 transition-colors duration-300 flex gap-x-4`}
