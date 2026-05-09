@@ -64,3 +64,8 @@ export type portfolioItem = {
     alt: string;
   };
 };
+
+export type Usp = {
+  heading: string;
+  description: string;
+};

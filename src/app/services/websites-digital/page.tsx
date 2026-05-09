@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import UspClickThrough from "@/src/components/UspClickthrough";
 
 export default function WebsiteDigitalPage() {
   return (
@@ -27,6 +29,55 @@ export default function WebsiteDigitalPage() {
               className="group-hover:-rotate-45 transition-all duration-300"
             />
           </Link>
+        </div>
+      </div>
+      <div>
+        <div className="lg:flex max-w-300 mx-auto">
+          <div className="order-2 px-8 lg:grid lg:place-content-end">
+            <Image
+              src="/images/am-norfolk-roofing-laptop-mockup.png"
+              alt="website design for first response drainage a local drainage company in the East of England"
+              width={1000}
+              height={1000}
+              priority
+              className="w-full max-w-140 mx-auto"
+            />
+          </div>
+          <div className="order-1">
+            <UspClickThrough
+              heading="Websites That Perform"
+              paragraph={`A website shouldn't just exist! It should actively support your
+        growth. Every build we deliver is structured around performance, speed,
+        visibility, and long-term scalability.`}
+              usps={[
+                {
+                  heading: "Load Instantly",
+                  description:
+                    "Speed isn't optional. Built with modern frameworks like Next.js, our websites are engineered for performance from the ground up.",
+                },
+                {
+                  heading: "Rank Locally",
+                  description:
+                    "Structured properly with strong technical foundations, clean code, and SEO best practices baked in.",
+                },
+                {
+                  heading: "Convert Consistently",
+                  description:
+                    "Clear user journeys, strategic layouts, and focused messaging designed to turn visitors into enquiries.",
+                },
+                {
+                  heading: "Work On Every Device",
+                  description:
+                    "Mobile-first, responsive builds that look sharp and perform seamlessly across all screens.",
+                },
+                {
+                  heading: "Scale With Your Business",
+                  description:
+                    "Built to evolve, whether you're adding services, locations, content, or growth campaigns.",
+                },
+              ]}
+            />
+          </div>
         </div>
       </div>
     </main>
