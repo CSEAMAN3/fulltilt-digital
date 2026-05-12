@@ -1,5 +1,6 @@
 import UspClickThrough from "@/src/components/UspClickthrough";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function VideoPhotographyPage() {
   return (
@@ -30,8 +31,22 @@ export default function VideoPhotographyPage() {
             />
           </Link>
         </div>
-        <div>
-          <div></div>
+        <div className="lg:flex max-w-300 mx-auto">
+          <div className="order-2 px-8 lg:grid lg:place-content-end">
+            <div className="h-fit relative w-full max-w-140 mx-auto">
+              <Image
+                src="/images/nhfc-coaching.jpg"
+                alt="update this"
+                width={2500}
+                height={1458}
+                priority
+                className="w-full rounded-xl"
+              />
+              <p className="text-white text-xs absolute bottom-4 left-4">
+                NHFC photography
+              </p>
+            </div>
+          </div>
           <div>
             <UspClickThrough
               heading="Visuals that connect"
