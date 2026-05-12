@@ -2,7 +2,7 @@
 title: "Why Design and Illustration Matter for Businesses (Beyond Just Looks)"
 date: "2026-05-04"
 description: "Learn how strong design and illustration can help your business stand out, communicate clearly and build a more professional brand."
-coverImage: "teamPhotoOne"
+coverImage: "handPencil"
 coverImageAlt: "update this"
 author: "Fulltilt Digital"
 tags: ["Design", "Illustration", "Branding", "Creative"]

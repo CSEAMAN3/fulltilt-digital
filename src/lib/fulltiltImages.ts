@@ -143,6 +143,14 @@ export const fulltiltImages = {
     width: 780,
     height: 3124,
   },
+  handPencil: {
+    src: "hand-pencil_nm3zsy.png",
+    alt: "Graphic design black and white hand holding illustrated pencil",
+    width: 1920,
+    height: 1080,
+  },
 };
 
 export type FulltiltImageKey = keyof typeof fulltiltImages;
+
+// hand-pencil_nm3zsy

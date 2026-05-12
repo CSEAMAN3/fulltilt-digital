@@ -110,7 +110,7 @@ export default async function PostPage({ params }: PostPageProps) {
           <CloudinaryImage
             {...imageConfig}
             alt={post.coverImageAlt ?? imageConfig.alt}
-            className="w-full h-90 object-cover mb-4"
+            className="w-full h-full object-cover mb-4"
             priority
           />
         )}

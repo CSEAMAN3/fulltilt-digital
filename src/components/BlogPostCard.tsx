@@ -107,7 +107,7 @@ export default function BlogPostCard({
         <div className="place-content-center">
           <CloudinaryUnOpt
             {...Images[imageKey]}
-            className="h-full object-cover mb-2"
+            className="w-full h-60 object-cover mb-2"
           />
           <p className="text-xs font-semibold text-accent-one mb-1">
             Created by {post.author}
