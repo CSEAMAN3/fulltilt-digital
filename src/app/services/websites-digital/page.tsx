@@ -45,7 +45,8 @@ export default function WebsiteDigitalPage() {
           </div>
           <div className="order-1">
             <UspClickThrough
-              heading="Websites That Perform"
+              heading="Websites that perform"
+              subHeading="Designed to convert"
               paragraph={`A website shouldn't just exist! It should actively support your
         growth. Every build we deliver is structured around performance, speed,
         visibility, and long-term scalability.`}

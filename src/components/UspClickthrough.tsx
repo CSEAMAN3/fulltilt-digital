@@ -6,12 +6,14 @@ import { useState } from "react";
 
 interface UspClickThroughProps {
   heading: string;
+  subHeading: string;
   paragraph: string;
   usps: Usp[];
 }
 
 export default function UspClickThrough({
   heading,
+  subHeading,
   paragraph,
   usps,
 }: UspClickThroughProps) {
@@ -20,7 +22,7 @@ export default function UspClickThrough({
   return (
     <div className="text-black px-8 pt-12 pb-8 md:pt-16 md:pb-16 lg:pt-0 lg:pb-4 max-w-300 mx-auto">
       <h2 className="text-3xl md:text-4xl mb-2 font-bold">
-        <span className="block text-2xl">Designed to convert</span>
+        <span className="block text-2xl">{subHeading}</span>
         {heading}
       </h2>
       <p className="text-balance max-w-[80ch] mb-6 md:mb-8 font-light">
