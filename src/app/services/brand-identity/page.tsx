@@ -49,7 +49,7 @@ export default function BrandIdentityPage() {
               alt="fulltilt digital logo"
               className="w-50 h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             />
-            <p className="text-white text-sm absolute bottom-4 left-4">
+            <p className="text-white text-xs absolute bottom-4 left-4">
               AM Norfolk Roofing Services logo
             </p>
           </div>
@@ -58,17 +58,15 @@ export default function BrandIdentityPage() {
           <UspClickThrough
             heading="Brands that stand out"
             subHeading="Made memorable"
-            paragraph={`A website shouldn't just exist! It should actively support your
-        growth. Every build we deliver is structured around performance, speed,
-        visibility, and long-term scalability.`}
+            paragraph={`A strong brand identity does more than look good, it helps people recognise you, remember you, and trust your business.`}
             usps={[
               {
                 heading: "Stand Out Clearly",
                 description:
-                  "In crowded markets, clarity matters. We create distinctive brand identities that make your business recognisable and memorable..",
+                  "In crowded markets, clarity matters. We create distinctive brand identities that make your business recognisable and memorable.",
               },
               {
-                heading: "Buiild Instant Trust",
+                heading: "Build Instant Trust",
                 description:
                   "A professional brand signals credibility. Thoughtful design and consistent visuals help customers feel confident choosing your business.",
               },

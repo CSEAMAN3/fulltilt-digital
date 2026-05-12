@@ -1,3 +1,4 @@
+import UspClickThrough from "@/src/components/UspClickthrough";
 import Link from "next/link";
 
 export default function VideoPhotographyPage() {
@@ -28,6 +29,43 @@ export default function VideoPhotographyPage() {
               className="group-hover:-rotate-45 transition-all duration-300"
             />
           </Link>
+        </div>
+        <div>
+          <div></div>
+          <div>
+            <UspClickThrough
+              heading="Visuals that connect"
+              subHeading="Made memorable"
+              paragraph={`Strong visual content helps people understand your business quickly and builds confidence in the quality of your work.`}
+              usps={[
+                {
+                  heading: "Show Your Work",
+                  description:
+                    "Customers want to see the quality of what you do. Professional photography and video showcase your work in a way that builds confidence and credibility.",
+                },
+                {
+                  heading: "Build Instant Trust",
+                  description:
+                    "Authentic visuals of your team, process and finished work help people feel more confident choosing your business.",
+                },
+                {
+                  heading: "Capture Attention",
+                  description:
+                    "Strong imagery stops people scrolling and encourages them to engage with your content across your website and social platforms.",
+                },
+                {
+                  heading: "Tell Your Story",
+                  description:
+                    "Video and photography help communicate the personality behind your business, giving customers a clearer understanding of who you are and how you work.",
+                },
+                {
+                  heading: "Use It Everywhere",
+                  description:
+                    "Your visual content can be used across your website, social media, marketing materials and advertising, creating a consistent and professional presence.",
+                },
+              ]}
+            />
+          </div>
         </div>
       </div>
     </main>
