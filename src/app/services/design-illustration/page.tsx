@@ -1,4 +1,6 @@
 import Link from "next/link";
+import UspClickThrough from "@/src/components/UspClickthrough";
+import Image from "next/image";
 
 export default function DesignIllustrationPage() {
   return (
@@ -28,6 +30,54 @@ export default function DesignIllustrationPage() {
               className="group-hover:-rotate-45 transition-all duration-300"
             />
           </Link>
+        </div>
+        <div className="lg:flex max-w-300 mx-auto">
+          <div className="order-2 px-8 lg:grid lg:place-content-end">
+            <div className="h-fit relative w-full max-w-140 mx-auto">
+              <Image
+                src="/images/design-illustration.png"
+                alt="update this"
+                width={2500}
+                height={1458}
+                priority
+                className="w-full rounded-xl"
+              />
+            </div>
+          </div>
+          <div>
+            <UspClickThrough
+              heading="Design That Delivers"
+              subHeading="Visually driven"
+              paragraph={`Good design helps your business communicate ideas clearly and present itself professionally to strengthen your brand, support your marketing and help your business stand out across every touchpoint.`}
+              usps={[
+                {
+                  heading: "Communicate Clearly",
+                  description:
+                    "Design helps simplify complex ideas and present information in a way that people can quickly understand.",
+                },
+                {
+                  heading: "Strengthen Your Brand",
+                  description:
+                    "Consistent design supports your brand identity and ensures your business looks professional wherever it appears.",
+                },
+                {
+                  heading: "Stand Our Visually",
+                  description:
+                    "Strong visual design helps your business capture attention and differentiate itself from competitors.",
+                },
+                {
+                  heading: "Support Your Marketing",
+                  description:
+                    "Well-designed visuals make marketing materials more engaging and effective across digital and print channels.",
+                },
+                {
+                  heading: "Use It Everywhere",
+                  description:
+                    "Design and illustration can be applied across websites, social media, presentations and marketing materials to create a consistent visual presence.",
+                },
+              ]}
+            />
+          </div>
         </div>
       </div>
     </main>
