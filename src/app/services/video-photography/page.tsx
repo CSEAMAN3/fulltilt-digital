@@ -50,7 +50,7 @@ export default function VideoPhotographyPage() {
           <div>
             <UspClickThrough
               heading="Visuals that connect"
-              subHeading="Made memorable"
+              subHeading="Captured professionally"
               paragraph={`Strong visual content helps people understand your business quickly and builds confidence in the quality of your work.`}
               usps={[
                 {
