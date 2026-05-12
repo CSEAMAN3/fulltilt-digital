@@ -122,7 +122,7 @@ export default async function PostPage({ params }: PostPageProps) {
         </div>
         <section
           dangerouslySetInnerHTML={{ __html: contentHtml }}
-          className="prose prose-sm sm:prose-base md:prose-lg text-black  prose-headings:text-brand-main-dark prose-a:text-brand-main-dark prose-a:underline prose-a:underline-offset-4 prose-a:decoration-brand-main-dark prose-a:hover:text-brand-main prose-a:transition-colors prose-strong:text-black prose-strong:font-semibold
+          className="prose prose-sm sm:prose-base md:prose-lg text-black  prose-headings:text-black prose-a:text-brand-main-dark prose-a:underline prose-a:underline-offset-4 prose-a:decoration-brand-main-dark prose-a:hover:text-brand-main prose-a:transition-colors prose-strong:text-black prose-strong:font-semibold
           prose-blockquote:border-l-4
     prose-blockquote:border-brand-main
     prose-blockquote:pl-4
