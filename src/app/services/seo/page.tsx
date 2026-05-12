@@ -1,4 +1,6 @@
 import Link from "next/link";
+import UspClickThrough from "@/src/components/UspClickthrough";
+import Image from "next/image";
 
 export default function SeoPage() {
   return (
@@ -28,6 +30,54 @@ export default function SeoPage() {
               className="group-hover:-rotate-45 transition-all duration-300"
             />
           </Link>
+        </div>
+      </div>
+      <div className="lg:flex max-w-300 mx-auto">
+        <div className="order-2 px-8 lg:grid lg:place-content-end">
+          <div className="h-fit relative w-full max-w-140 mx-auto">
+            <Image
+              src="/images/seo-laptop-mockup.png"
+              alt="update this"
+              width={3027}
+              height={1562}
+              priority
+              className="w-full rounded-xl"
+            />
+          </div>
+        </div>
+        <div>
+          <UspClickThrough
+            heading="Search that works"
+            subHeading="Fully Optimised"
+            paragraph={`Search engine optimisation helps your business appear when potential customers are actively looking for the services you offer. We focus on building strong technical foundations, clear site structure and optimised content that improves visibility and helps attract the right visitors.`}
+            usps={[
+              {
+                heading: "Be Found Locally",
+                description:
+                  "Local SEO helps your business appear in search results when people nearby are looking for the services you offer.",
+              },
+              {
+                heading: "Build Strong Foundations",
+                description:
+                  "Technical SEO ensures your website is structured properly so search engines can understand and index your pages effectively.",
+              },
+              {
+                heading: "Improve Visibility",
+                description:
+                  "Optimised pages, clear content and strong site structure help improve your website's visibility in search engines.",
+              },
+              {
+                heading: "Attract The Right Visitors",
+                description:
+                  "SEO focuses on bringing in people who are actively searching for the services your business provides.",
+              },
+              {
+                heading: "Support Long-Term Growth",
+                description:
+                  "Unlike short-term marketing tactics, SEO builds long-term visibility that continues to benefit your business over time.",
+              },
+            ]}
+          />
         </div>
       </div>
     </main>
