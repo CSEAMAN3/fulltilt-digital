@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import UspClickThrough from "@/src/components/UspClickthrough";
+import HowWeHelpSteps from "@/src/components/HowWeHelpSteps";
 
 export default function WebsiteDigitalPage() {
   return (
@@ -80,6 +81,9 @@ export default function WebsiteDigitalPage() {
             />
           </div>
         </div>
+      </div>
+      <div className="px-8">
+        <HowWeHelpSteps data="web" title="How we work" />
       </div>
     </main>
   );

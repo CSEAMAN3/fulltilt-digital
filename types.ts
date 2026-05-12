@@ -45,6 +45,7 @@ export interface BlogPostWithHtml extends BlogPost {
 
 export type Steps = {
   id: number;
+  catagory: string;
   title: string;
   paragraph: string;
   paragraphTwo: string;

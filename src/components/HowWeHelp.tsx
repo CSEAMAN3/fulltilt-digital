@@ -1,7 +1,12 @@
 import Image from "next/image";
 import HowWeHelpSteps from "./HowWeHelpSteps";
 
-export default function HowWeHelp() {
+interface HowWeHelpProps {
+  data: string;
+  title: string;
+}
+
+export default function HowWeHelp({ data, title }: HowWeHelpProps) {
   return (
     <div className="min-h-100 px-8 mb-8">
       <h4 className="font-bold tracking-tight text-3xl sm:text-[40px] w-fit mx-auto text-center">
@@ -19,7 +24,7 @@ export default function HowWeHelp() {
         height={500}
         className="w-full h-auto max-w-240 max-h-160 object-cover mx-auto"
       />
-      <HowWeHelpSteps />
+      <HowWeHelpSteps data={data} title={title} />
     </div>
   );
 }

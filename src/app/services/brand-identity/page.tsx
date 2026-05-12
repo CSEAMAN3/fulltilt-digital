@@ -1,6 +1,7 @@
 import UspClickThrough from "@/src/components/UspClickthrough";
 import Link from "next/link";
 import Image from "next/image";
+import HowWeHelpSteps from "@/src/components/HowWeHelpSteps";
 
 export default function BrandIdentityPage() {
   return (
@@ -88,6 +89,9 @@ export default function BrandIdentityPage() {
             ]}
           />
         </div>
+      </div>
+      <div className="px-8">
+        <HowWeHelpSteps data="brand" title="How we work" />
       </div>
     </main>
   );

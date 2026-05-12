@@ -51,7 +51,7 @@ export default function HomePage() {
         </Link>
       </div>
       <HomeServicesSection />
-      <HowWeHelp />
+      <HowWeHelp data="main" title="Our process" />
       <HomeContactSection />
     </main>
   );

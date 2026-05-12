@@ -4,20 +4,29 @@ import { howWeWorkSteps } from "../lib/howWeWorkSteps";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function HowWeHelpSteps() {
+interface HowWeHelpStepsProps {
+  data: string;
+  title: string;
+}
+
+export default function HowWeHelpSteps({ data, title }: HowWeHelpStepsProps) {
   const [openStep, setOpenStep] = useState<number | null>(null);
 
   const toggleQuestion = (id: number) => {
     setOpenStep((prev) => (prev === id ? null : id));
   };
 
+  const filteredSteps = howWeWorkSteps.filter(
+    (steps) => steps.catagory === data,
+  );
+
   return (
     <div className="py-16 max-w-240 mx-auto">
       <h5 className="font-bold tracking-tight text-3xl sm:text-[40px] mb-8">
-        Our process
+        {title}
       </h5>
       <div className="grid gap-4">
-        {howWeWorkSteps.map((step) => {
+        {filteredSteps.map((step) => {
           const isOpen = openStep === step.id;
           const contentId = `step-${step.id}-content`;
           return (

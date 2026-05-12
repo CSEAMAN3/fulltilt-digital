@@ -1,6 +1,7 @@
 import Link from "next/link";
 import UspClickThrough from "@/src/components/UspClickthrough";
 import Image from "next/image";
+import HowWeHelpSteps from "@/src/components/HowWeHelpSteps";
 
 export default function DesignIllustrationPage() {
   return (
@@ -79,6 +80,9 @@ export default function DesignIllustrationPage() {
             />
           </div>
         </div>
+      </div>
+      <div className="px-8">
+        <HowWeHelpSteps data="design" title="How we work" />
       </div>
     </main>
   );

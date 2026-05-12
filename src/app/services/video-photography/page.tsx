@@ -1,6 +1,7 @@
 import UspClickThrough from "@/src/components/UspClickthrough";
 import Link from "next/link";
 import Image from "next/image";
+import HowWeHelpSteps from "@/src/components/HowWeHelpSteps";
 
 export default function VideoPhotographyPage() {
   return (
@@ -82,6 +83,9 @@ export default function VideoPhotographyPage() {
             />
           </div>
         </div>
+      </div>
+      <div className="px-8">
+        <HowWeHelpSteps data="photo" title="How we work" />
       </div>
     </main>
   );

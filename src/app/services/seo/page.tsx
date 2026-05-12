@@ -1,6 +1,7 @@
 import Link from "next/link";
 import UspClickThrough from "@/src/components/UspClickthrough";
 import Image from "next/image";
+import HowWeHelpSteps from "@/src/components/HowWeHelpSteps";
 
 export default function SeoPage() {
   return (
@@ -79,6 +80,9 @@ export default function SeoPage() {
             ]}
           />
         </div>
+      </div>
+      <div className="px-8">
+        <HowWeHelpSteps data="seo" title="How we work" />
       </div>
     </main>
   );
