@@ -85,7 +85,7 @@ export default function WebsiteDigitalPage() {
       <div className="px-8">
         <HowWeHelpSteps
           data="web"
-          title="Our web development process"
+          title="Our website development  process"
           subheading="How we work"
         />
       </div>

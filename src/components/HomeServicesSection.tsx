@@ -5,7 +5,7 @@ export default function HomeServicesSection() {
     <div className="max-w-300 mx-auto px-8 py-16 sm:py-24">
       <div className="">
         <h2 className="font-bold text-4xl mb-4 tracking-tight text-balance">
-          <span className="block text-2xl mb-2">Made to work</span>
+          <span className="block text-2xl mb-2 sm:ml-8">Made to work</span>
           Designed to generate enquiries
         </h2>
         <p className="font-light max-w-[60ch]">
