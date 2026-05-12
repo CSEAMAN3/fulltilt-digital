@@ -1,19 +1,23 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function HomeContactSection() {
+interface HomeContactSectionProps {
+  heading: string;
+  paragraph: string;
+}
+
+export default function HomeContactSection({
+  heading,
+  paragraph,
+}: HomeContactSectionProps) {
   return (
     <div className="max-w-300 mx-auto px-8 flex flex-col sm:flex-row gap-8 mb-8">
       <div className="py-8">
         <h5 className="font-bold text-4xl max-w-[20ch] mb-4 tracking-tight">
           <span className="block text-2xl mb-2">Let&#39;s talk</span>
-          Helping local businesses throughout the UK
+          {heading}
         </h5>
-        <p className="max-w-[44ch] mb-8">
-          Every project starts with a discovery meeting. We&#39;ll take the time
-          to understand your business, your goals and the challenges you&#39;re
-          looking to solve.
-        </p>
+        <p className="max-w-[44ch] mb-8">{paragraph}</p>
         <Link href={"/contact"} className="font-bold w-fit flex gap-2 group">
           Book a time to chat
           {/* eslint-disable-next-line @next/next/no-img-element */}

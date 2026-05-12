@@ -1,3 +1,7 @@
+import HomeContactSection from "@/src/components/HomeContactSection";
+import { services } from "@/src/lib/services";
+import Link from "next/link";
+
 export default function ServicesPage() {
   return (
     <main className="">
@@ -30,6 +34,67 @@ export default function ServicesPage() {
           </div>
         </div>
       </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 max-w-240 gap-4 mx-auto px-8 mb-16">
+        {services.map((s) => {
+          const Icon = s.cardIcon;
+          return (
+            <div
+              key={s.slug}
+              className="rounded-sm overflow-hidden bg-brand-accent-one relative group border border-[#c090ff]"
+            >
+              <Link
+                className="w-full px-8 pt-24 pb-16 h-full block group hover:bg-brand-accent-two transition-colors duration-300"
+                href={`/services/${s.slug}`}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/points-v2.svg"
+                  // src="/images/purple-green-points-small.svg"
+                  // src="/images/shape.png"
+                  alt=""
+                  width={10}
+                  style={{ width: "240px", height: "auto" }}
+                  className="absolute bottom-0 right-0"
+                />
+                <Icon size={32} className={`absolute top-6 right-8`} />
+                <h3
+                  className={`mb-2 text-lg font-bold transition-colors duration-300 absolute top-16 left-8`}
+                >
+                  {s.name}
+                </h3>
+                <div className="relative z-10 grid place-content-center">
+                  <p className="mb-8 font-light text-balance text-shadow-brand-accent-one text-shadow-lg group-hover:text-shadow-brand-accent-two ">
+                    {s.cardParas[0]}
+                  </p>
+                  <p className="mb-8 font-light text-balance text-shadow-brand-accent-one text-shadow-lg group-hover:text-shadow-brand-accent-two ">
+                    {s.cardParas[1]}
+                  </p>
+                  <p className="mb-8 font-light text-balance text-shadow-brand-accent-one text-shadow-lg group-hover:text-shadow-brand-accent-two ">
+                    {s.cardParas[2]}
+                  </p>
+                </div>
+                <h6
+                  className={`font-bold absolute bottom-4 transition-colors duration-300 flex gap-x-4`}
+                >
+                  Explore more
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/arrow.svg"
+                    alt=""
+                    width={10}
+                    style={{ width: "20px", height: "auto" }}
+                    className="group-hover:-rotate-45 transition-all duration-300"
+                  />
+                </h6>
+              </Link>
+            </div>
+          );
+        })}
+      </div>
+      <HomeContactSection
+        heading="Services designed to help local businesses"
+        paragraph="We offer a range of creative and digital services designed to help businesses grow online. Whether you need a high-performing website, stronger branding, better content or improved visibility, we'll help you find the right approach for your business."
+      />
     </main>
   );
 }

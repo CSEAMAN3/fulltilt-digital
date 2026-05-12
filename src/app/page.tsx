@@ -52,7 +52,10 @@ export default function HomePage() {
       </div>
       <HomeServicesSection />
       <HowWeHelp data="main" title="Our process" />
-      <HomeContactSection />
+      <HomeContactSection
+        heading="Helping local businesses throughout the UK"
+        paragraph="Every project starts with a discovery meeting. We'll take the time to understand your business, your goals and the challenges you're looking to solve."
+      />
     </main>
   );
 }
