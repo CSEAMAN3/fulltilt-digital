@@ -85,7 +85,11 @@ export default function VideoPhotographyPage() {
         </div>
       </div>
       <div className="px-8">
-        <HowWeHelpSteps data="photo" title="How we work" />
+        <HowWeHelpSteps
+          data="photo"
+          title="Our video and photography process"
+          subheading="How we work"
+        />
       </div>
     </main>
   );

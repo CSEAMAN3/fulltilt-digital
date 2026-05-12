@@ -7,9 +7,14 @@ import { motion, AnimatePresence } from "framer-motion";
 interface HowWeHelpStepsProps {
   data: string;
   title: string;
+  subheading?: string;
 }
 
-export default function HowWeHelpSteps({ data, title }: HowWeHelpStepsProps) {
+export default function HowWeHelpSteps({
+  data,
+  title,
+  subheading,
+}: HowWeHelpStepsProps) {
   const [openStep, setOpenStep] = useState<number | null>(null);
 
   const toggleQuestion = (id: number) => {
@@ -22,7 +27,10 @@ export default function HowWeHelpSteps({ data, title }: HowWeHelpStepsProps) {
 
   return (
     <div className="py-16 max-w-240 mx-auto">
-      <h5 className="font-bold tracking-tight text-3xl sm:text-[40px] mb-8">
+      <h5
+        className={`font-bold tracking-tight text-balance text-3xl sm:text-[40px] mb-8 ${subheading ? "w-fit mx-auto text-center" : ""}}`}
+      >
+        {subheading && <span className="block text-xl ml-8">{subheading}</span>}
         {title}
       </h5>
       <div className="grid gap-4">
@@ -64,8 +72,12 @@ export default function HowWeHelpSteps({ data, title }: HowWeHelpStepsProps) {
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="overflow-hidden text-background font-light"
                   >
-                    <p className="py-2">{step.paragraph}</p>
-                    <p className="py-2">{step.paragraphTwo}</p>
+                    <p className="py-2 max-w-[80ch] text-pretty">
+                      {step.paragraph}
+                    </p>
+                    <p className="py-2 max-w-[80ch] text-pretty">
+                      {step.paragraphTwo}
+                    </p>
                   </motion.div>
                 )}
               </AnimatePresence>

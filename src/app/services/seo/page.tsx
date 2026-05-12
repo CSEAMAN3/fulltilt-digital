@@ -82,7 +82,11 @@ export default function SeoPage() {
         </div>
       </div>
       <div className="px-8">
-        <HowWeHelpSteps data="seo" title="How we work" />
+        <HowWeHelpSteps
+          data="seo"
+          title="Our search engine optimisation process"
+          subheading="How we work"
+        />
       </div>
     </main>
   );

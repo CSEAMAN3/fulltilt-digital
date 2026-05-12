@@ -82,7 +82,11 @@ export default function DesignIllustrationPage() {
         </div>
       </div>
       <div className="px-8">
-        <HowWeHelpSteps data="design" title="How we work" />
+        <HowWeHelpSteps
+          data="design"
+          title="Our design and illustration process"
+          subheading="How we work"
+        />
       </div>
     </main>
   );

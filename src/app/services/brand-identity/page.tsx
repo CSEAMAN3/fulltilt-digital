@@ -91,7 +91,11 @@ export default function BrandIdentityPage() {
         </div>
       </div>
       <div className="px-8">
-        <HowWeHelpSteps data="brand" title="How we work" />
+        <HowWeHelpSteps
+          data="brand"
+          title="Our brand and indentity process"
+          subheading="How we work"
+        />
       </div>
     </main>
   );
