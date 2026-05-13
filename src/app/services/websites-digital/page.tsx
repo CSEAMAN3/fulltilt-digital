@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import UspClickThrough from "@/src/components/UspClickthrough";
-import HowWeHelpSteps from "@/src/components/HowWeHelpSteps";
+import HowWeHelpSlider from "@/src/components/HowWeHelpSlider";
 
 export default function WebsiteDigitalPage() {
   return (
@@ -82,12 +82,12 @@ export default function WebsiteDigitalPage() {
           </div>
         </div>
       </div>
-      <div className="px-8">
-        <HowWeHelpSteps
-          data="web"
-          title="Our website development  process"
-          subheading="How we work"
-        />
+      <div className="px-8 py-8 sm:py-16 max-w-300 mx-auto">
+        <h2 className="font-bold tracking-tight text-balance mx-auto text-3xl sm:text-[40px] mb-8 w-fit">
+          <span className="block text-xl ml-4 md:ml-8">How we work</span>
+          Our Website development process
+        </h2>
+        <HowWeHelpSlider data="web" />
       </div>
     </main>
   );

@@ -1,7 +1,7 @@
 import UspClickThrough from "@/src/components/UspClickthrough";
 import Link from "next/link";
 import Image from "next/image";
-import HowWeHelpSteps from "@/src/components/HowWeHelpSteps";
+import HowWeHelpSlider from "@/src/components/HowWeHelpSlider";
 
 export default function VideoPhotographyPage() {
   return (
@@ -84,12 +84,12 @@ export default function VideoPhotographyPage() {
           </div>
         </div>
       </div>
-      <div className="px-8">
-        <HowWeHelpSteps
-          data="photo"
-          title="Our video and photography process"
-          subheading="How we work"
-        />
+      <div className="px-8 py-8 sm:py-16 max-w-300 mx-auto">
+        <h2 className="font-bold tracking-tight text-balance mx-auto text-3xl sm:text-[40px] mb-8 w-fit">
+          <span className="block text-xl ml-4 md:ml-8">How we work</span>
+          Our video and photography process
+        </h2>
+        <HowWeHelpSlider data="photo" />
       </div>
     </main>
   );

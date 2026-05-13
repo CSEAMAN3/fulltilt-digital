@@ -1,7 +1,7 @@
 import Link from "next/link";
 import UspClickThrough from "@/src/components/UspClickthrough";
 import Image from "next/image";
-import HowWeHelpSteps from "@/src/components/HowWeHelpSteps";
+import HowWeHelpSlider from "@/src/components/HowWeHelpSlider";
 
 export default function SeoPage() {
   return (
@@ -81,12 +81,12 @@ export default function SeoPage() {
           />
         </div>
       </div>
-      <div className="px-8">
-        <HowWeHelpSteps
-          data="seo"
-          title="Our search engine optimisation process"
-          subheading="How we work"
-        />
+      <div className="px-8 py-8 sm:py-16 max-w-300 mx-auto">
+        <h2 className="font-bold tracking-tight text-balance mx-auto text-3xl sm:text-[40px] mb-8 w-fit">
+          <span className="block text-xl ml-4 md:ml-8">How we work</span>
+          Our search engine optimisation process
+        </h2>
+        <HowWeHelpSlider data="seo" />
       </div>
     </main>
   );

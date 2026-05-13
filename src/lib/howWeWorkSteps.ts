@@ -67,7 +67,7 @@ export const howWeWorkSteps: Steps[] = [
   {
     id: 8,
     catagory: "web",
-    title: "04 - Development & Performance Build",
+    title: "04 - Development & Build",
     paragraph:
       "Using modern frameworks like Next.js, we build your website for speed, security, and long-term scalability.",
     paragraphTwo:
@@ -76,7 +76,7 @@ export const howWeWorkSteps: Steps[] = [
   {
     id: 9,
     catagory: "web",
-    title: "05 - Launch, Optimise & Support",
+    title: "05 - Launch, Optimise, Support",
     paragraph: "Launch isn't the end! It's the beginning.",
     paragraphTwo:
       "We test thoroughly, refine performance, and provide ongoing support to ensure your website continues to attract, convert, and grow with your business.",
