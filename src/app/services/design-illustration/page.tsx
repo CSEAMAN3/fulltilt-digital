@@ -2,6 +2,8 @@ import Link from "next/link";
 import UspClickThrough from "@/src/components/UspClickthrough";
 import Image from "next/image";
 import HowWeHelpSlider from "@/src/components/HowWeHelpSlider";
+import HomeContactSection from "@/src/components/HomeContactSection";
+import Faq from "@/src/components/Faq";
 
 export default function DesignIllustrationPage() {
   return (
@@ -87,6 +89,20 @@ export default function DesignIllustrationPage() {
           Our design and illustration process
         </h2>
         <HowWeHelpSlider data="design" />
+      </div>
+      <div>
+        <HomeContactSection
+          heading="Creative design built around your business"
+          paragraph="From marketing materials to custom visuals and illustrations, we create design work that supports your brand, strengthens your communication and helps your business look more professional across every touchpoint."
+        />
+      </div>
+      <div className="px-8">
+        <Faq
+          data="design"
+          title="Frequently Asked Questions"
+          subheading="Design + Illustration"
+          paragraph="Find answers about our graphic design and illustration services, including custom visuals, marketing materials, digital assets and creative support for your business."
+        />
       </div>
     </main>
   );

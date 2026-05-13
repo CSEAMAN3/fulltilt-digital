@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import UspClickThrough from "@/src/components/UspClickthrough";
 import HowWeHelpSlider from "@/src/components/HowWeHelpSlider";
+import Faq from "@/src/components/Faq";
+import HomeContactSection from "@/src/components/HomeContactSection";
 
 export default function WebsiteDigitalPage() {
   return (
@@ -88,6 +90,20 @@ export default function WebsiteDigitalPage() {
           Our Website development process
         </h2>
         <HowWeHelpSlider data="web" />
+      </div>
+      <div>
+        <HomeContactSection
+          heading="Websites built to help your business grow"
+          paragraph="Whether you need a completely new website or want to improve an existing one, we'll help you create a faster, more effective online presence built around visibility, performance and generating more enquiries."
+        />
+      </div>
+      <div className="px-8">
+        <Faq
+          data="websites"
+          title="Frequently Asked Questions"
+          subheading="Websites + Digital"
+          paragraph="Everything you need to know about our website design and development process, from timelines and SEO to support, performance and long-term growth."
+        />
       </div>
     </main>
   );

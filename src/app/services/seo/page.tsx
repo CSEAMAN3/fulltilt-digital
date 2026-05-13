@@ -2,6 +2,8 @@ import Link from "next/link";
 import UspClickThrough from "@/src/components/UspClickthrough";
 import Image from "next/image";
 import HowWeHelpSlider from "@/src/components/HowWeHelpSlider";
+import HomeContactSection from "@/src/components/HomeContactSection";
+import Faq from "@/src/components/Faq";
 
 export default function SeoPage() {
   return (
@@ -87,6 +89,20 @@ export default function SeoPage() {
           Our search engine optimisation process
         </h2>
         <HowWeHelpSlider data="seo" />
+      </div>
+      <div>
+        <HomeContactSection
+          heading="Get your business found online"
+          paragraph="SEO is about more than rankings — it's about attracting the right people at the right time. We help businesses improve their visibility, increase local reach and generate more consistent enquiries through structured SEO strategies."
+        />
+      </div>
+      <div className="px-8">
+        <Faq
+          data="seo"
+          title="Frequently Asked Questions"
+          subheading="Search engine optimisation"
+          paragraph="Common questions about SEO, local visibility, rankings and how we help businesses generate more traffic, enquiries and long-term online growth."
+        />
       </div>
     </main>
   );

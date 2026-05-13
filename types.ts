@@ -70,3 +70,10 @@ export type Usp = {
   heading: string;
   description: string;
 };
+
+export type Faq = {
+  id: number;
+  service: string;
+  question: string;
+  answer: string;
+};

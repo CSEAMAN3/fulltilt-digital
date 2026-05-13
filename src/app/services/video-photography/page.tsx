@@ -2,6 +2,8 @@ import UspClickThrough from "@/src/components/UspClickthrough";
 import Link from "next/link";
 import Image from "next/image";
 import HowWeHelpSlider from "@/src/components/HowWeHelpSlider";
+import HomeContactSection from "@/src/components/HomeContactSection";
+import Faq from "@/src/components/Faq";
 
 export default function VideoPhotographyPage() {
   return (
@@ -90,6 +92,20 @@ export default function VideoPhotographyPage() {
           Our video and photography process
         </h2>
         <HowWeHelpSlider data="photo" />
+      </div>
+      <div>
+        <HomeContactSection
+          heading="Show your business at its best"
+          paragraph="Strong visuals help people connect with your business before they ever get in touch. From photography to video content, we create visuals that build trust, showcase your work and strengthen your online presence."
+        />
+      </div>
+      <div className="px-8">
+        <Faq
+          data="photo"
+          title="Frequently Asked Questions"
+          subheading="Video + Photography"
+          paragraph="Learn more about our approach to photography and video content, including filming, editing, content usage and creating visuals that represent your business properly."
+        />
       </div>
     </main>
   );

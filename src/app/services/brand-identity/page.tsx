@@ -2,6 +2,8 @@ import UspClickThrough from "@/src/components/UspClickthrough";
 import Link from "next/link";
 import Image from "next/image";
 import HowWeHelpSlider from "@/src/components/HowWeHelpSlider";
+import HomeContactSection from "@/src/components/HomeContactSection";
+import Faq from "@/src/components/Faq";
 
 export default function BrandIdentityPage() {
   return (
@@ -96,6 +98,20 @@ export default function BrandIdentityPage() {
           Our brand and identity process
         </h2>
         <HowWeHelpSlider data="brand" />
+      </div>
+      <div>
+        <HomeContactSection
+          heading="Build a brand people remember"
+          paragraph="Your brand should reflect the quality of your business and help you stand out for the right reasons. We'll help you create a clear, confident identity that feels professional, consistent and built for long-term growth."
+        />
+      </div>
+      <div className="px-8">
+        <Faq
+          data="branding"
+          title="Frequently Asked Questions"
+          subheading="Brand + Identity"
+          paragraph="Answers to common questions about branding, visual identity and creating a brand that helps your business stand out and build trust."
+        />
       </div>
     </main>
   );

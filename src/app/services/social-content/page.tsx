@@ -1,5 +1,8 @@
 import Link from "next/link";
 
+import HomeContactSection from "@/src/components/HomeContactSection";
+import Faq from "@/src/components/Faq";
+
 export default function SocialContentPage() {
   return (
     <main className="">
@@ -29,6 +32,21 @@ export default function SocialContentPage() {
             />
           </Link>
         </div>
+      </div>
+      {/* missing section here */}
+      <div>
+        <HomeContactSection
+          heading="Content that keeps your business visible"
+          paragraph="Consistent content helps businesses stay relevant, build trust and attract attention online. We help create structured, high-quality content that supports your brand and keeps your business visible to the right audience."
+        />
+      </div>
+      <div className="px-8">
+        <Faq
+          data="social"
+          title="Frequently Asked Questions"
+          subheading="Social + Content"
+          paragraph="Everything you need to know about content creation, social media support and building a consistent online presence that keeps your business visible and engaging."
+        />
       </div>
     </main>
   );
