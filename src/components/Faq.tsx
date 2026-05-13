@@ -27,9 +27,11 @@ export default function HowWeHelpSteps({
 
   return (
     <div className=" py-16 max-w-240 mx-auto">
-      <h5 className="font-bold tracking-tight text-balance mx-auto text-3xl sm:text-[40px] mb-2 w-fit">
+      <h5 className="font-bold tracking-tight text-balance text-center sm:text-left mx-auto text-3xl sm:text-[40px] mb-2 w-fit">
         {subheading && (
-          <span className="block text-xl ml-4 md:ml-8">{subheading}</span>
+          <span className="block text-base sm:text-xl sm:ml-4 md:ml-8">
+            {subheading}
+          </span>
         )}
         {title}
       </h5>
