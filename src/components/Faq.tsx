@@ -61,7 +61,7 @@ export default function HowWeHelpSteps({
                 <motion.span
                   animate={{ rotate: isOpen ? 45 : 0 }}
                   transition={{ duration: 0.2 }}
-                  className={`text-background group-hover:text-accent-three border border-black w-8 h-8 rounded-full grid place-content-center hover:bg-brand-main font-bold`}
+                  className={`shrink-0 text-background group-hover:text-accent-three border border-black w-8 h-8 rounded-full grid place-content-center hover:bg-brand-main font-bold`}
                 >
                   +
                 </motion.span>
