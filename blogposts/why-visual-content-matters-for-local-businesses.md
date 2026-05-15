@@ -2,8 +2,8 @@
 title: "Why Visual Content Matters for Local Businesses (More Than You Think)"
 date: "2026-05-04"
 description: "Discover how high-quality video and photography can transform how your business is perceived and help you generate more enquiries."
-coverImage: "teamPhotoOne"
-coverImageAlt: "update this"
+coverImage: "eyes"
+coverImageAlt: "illustrated collection of line drawn eyes"
 author: "Fulltilt Digital"
 tags: ["Video", "Photography", "Content", "Marketing"]
 readTime: "5 min read"

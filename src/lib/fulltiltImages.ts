@@ -149,8 +149,12 @@ export const fulltiltImages = {
     width: 1920,
     height: 1080,
   },
+  eyes: {
+    src: "eyes_fryehj.png",
+    alt: "illustrated collection of line drawn eyes",
+    width: 1920,
+    height: 1080,
+  },
 };
 
 export type FulltiltImageKey = keyof typeof fulltiltImages;
-
-// hand-pencil_nm3zsy

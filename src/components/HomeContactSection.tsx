@@ -13,7 +13,7 @@ export default function HomeContactSection({
   return (
     <div className="max-w-300 mx-auto px-8 flex flex-col sm:flex-row gap-8 mb-8">
       <div className="py-8">
-        <h5 className="font-bold text-4xl max-w-[20ch] mb-4 tracking-tight">
+        <h5 className="font-bold text-4xl max-w-[20ch] mb-4 tracking-tight text-balance">
           <span className="block text-2xl mb-2">Let&#39;s talk</span>
           {heading}
         </h5>
