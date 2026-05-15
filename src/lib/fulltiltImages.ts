@@ -161,6 +161,12 @@ export const fulltiltImages = {
     width: 1191,
     height: 851,
   },
+  heart: {
+    src: "maze_tjolpi.png",
+    alt: "maze that leads to a heart",
+    width: 1920,
+    height: 1080,
+  },
 };
 
 export type FulltiltImageKey = keyof typeof fulltiltImages;

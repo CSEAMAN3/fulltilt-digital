@@ -2,8 +2,8 @@
 title: "Local SEO for Local Businesses: How to Get Found by Customers in Your Area"
 date: "2026-04-28"
 description: "Struggling to show up on Google? Learn how local SEO works and how to get your business found by customers in your area."
-coverImage: "teamPhotoOne"
-coverImageAlt: "update this"
+coverImage: "heart"
+coverImageAlt: "maze that leads to a heart"
 author: "Fulltilt Digital"
 tags: ["seo", "local seo", "google ranking", "local business"]
 featured: false
