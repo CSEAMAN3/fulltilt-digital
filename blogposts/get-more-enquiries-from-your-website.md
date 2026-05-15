@@ -2,8 +2,8 @@
 title: "How to Get More Enquiries From Your Website (Without More Traffic)"
 date: "2026-04-28"
 description: "Struggling to get leads from your website? Learn how to turn more visitors into enquiries with practical, proven strategies for local service businesses."
-coverImage: "teamPhotoOne"
-coverImageAlt: "update this"
+coverImage: "traffic"
+coverImageAlt: "illustrated traffic on land sea and air"
 author: "Fulltilt Digital"
 tags: ["web design", "lead generation", "local business", "conversion"]
 featured: true

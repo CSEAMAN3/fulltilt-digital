@@ -155,6 +155,12 @@ export const fulltiltImages = {
     width: 1920,
     height: 1080,
   },
+  traffic: {
+    src: "traffic_vxietv.png",
+    alt: "illustrated traffic on land sea and air",
+    width: 1191,
+    height: 851,
+  },
 };
 
 export type FulltiltImageKey = keyof typeof fulltiltImages;
