@@ -167,6 +167,12 @@ export const fulltiltImages = {
     width: 1920,
     height: 1080,
   },
+  chart: {
+    src: "chart_iqdwx4.png",
+    alt: "laptop with high performance chart on cartoon background",
+    width: 1920,
+    height: 1080,
+  },
 };
 
 export type FulltiltImageKey = keyof typeof fulltiltImages;

@@ -2,8 +2,8 @@
 title: "What Makes a High-Converting Website for Local Service Businesses?"
 date: "2026-04-28"
 description: "Not all websites generate enquiries. Learn what actually makes a high-converting website for local service businesses and how to improve yours."
-coverImage: "teamPhotoOne"
-coverImageAlt: "Update this"
+coverImage: "chart"
+coverImageAlt: "laptop with high performance chart on cartoon background"
 author: "Fulltilt Digital"
 tags: ["web design", "conversion", "local business", "lead generation"]
 featured: false
