@@ -2,8 +2,8 @@
 title: "Why Branding Matters for Local Businesses (More Than You Think)"
 date: "2026-04-28"
 description: "Branding isn’t just a logo. Learn how strong branding helps local businesses build trust, stand out and win more work."
-coverImage: "teamPhotoOne"
-coverImageAlt: "Update this"
+coverImage: "brand"
+coverImageAlt: "brand wording duplicated in a square and replicated to create a brand kaleidoscope effect"
 author: "Fulltilt Digital"
 tags: ["branding", "brand identity", "local business", "marketing"]
 featured: false

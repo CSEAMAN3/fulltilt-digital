@@ -173,6 +173,12 @@ export const fulltiltImages = {
     width: 1920,
     height: 1080,
   },
+  brand: {
+    src: "brand_xdxtok.png",
+    alt: "brand wording duplicated in a square and replicated to create a brand kaleidoscope effect",
+    width: 1920,
+    height: 1080,
+  },
 };
 
 export type FulltiltImageKey = keyof typeof fulltiltImages;
