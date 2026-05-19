@@ -2,8 +2,8 @@
 title: "Why Most Businesses Struggle With Content (And How to Fix It)"
 date: "2026-04-28"
 description: "Struggling to stay consistent with content? Learn why most businesses fall behind and how to create content that actually works."
-coverImage: "teamPhotoOne"
-coverImageAlt: "update this"
+coverImage: "attention"
+coverImageAlt: "A Megaphone shouting attention"
 author: "Fulltilt Digital"
 tags: ["content marketing", "social media", "local business", "video marketing"]
 featured: false

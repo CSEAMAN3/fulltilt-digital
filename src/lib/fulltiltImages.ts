@@ -185,8 +185,12 @@ export const fulltiltImages = {
     width: 1920,
     height: 1080,
   },
+  attention: {
+    src: "attention_wy2hwm.png",
+    alt: "A Megaphone shouting attention",
+    width: 1920,
+    height: 1080,
+  },
 };
 
 export type FulltiltImageKey = keyof typeof fulltiltImages;
-
-// warning_iulhll
