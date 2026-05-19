@@ -2,8 +2,8 @@
 title: "5 Website Mistakes That Are Costing You Enquiries"
 date: "2026-04-28"
 description: "If your website isn’t generating leads, these common mistakes could be the reason. Learn what’s holding your site back and how to fix it."
-coverImage: "teamPhotoOne"
-coverImageAlt: "update this"
+coverImage: "warning"
+coverImageAlt: "Graphic showing warning signs"
 author: "Fulltilt Digital"
 tags: ["web design", "conversion", "lead generation", "local business"]
 featured: false

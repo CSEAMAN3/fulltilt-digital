@@ -179,6 +179,14 @@ export const fulltiltImages = {
     width: 1920,
     height: 1080,
   },
+  warning: {
+    src: "warning_iulhll.png",
+    alt: "Graphic showing warning signs",
+    width: 1920,
+    height: 1080,
+  },
 };
 
 export type FulltiltImageKey = keyof typeof fulltiltImages;
+
+// warning_iulhll
