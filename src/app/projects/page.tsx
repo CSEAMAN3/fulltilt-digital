@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { portfolio } from "@/src/lib/portfolio";
+import ProjectCard from "@/src/components/ProjectCard";
 
 export default function ProjectsPage() {
   const nhfcProject = portfolio.find(
@@ -51,7 +51,38 @@ export default function ProjectsPage() {
           </div>
         </div>
       </div>
-      {/* <BlogPostFilter posts={posts} /> */}
+      <div className="grid grid-cols-1 md:grid-cols-2 px-8 gap-8 max-w-300 mx-auto">
+        <ProjectCard
+          title={frdProject?.name}
+          intro={frdProject?.intro}
+          services={frdProject?.services}
+          coverImg={frdProject?.mockup.src}
+        />
+        <ProjectCard
+          title={amnrsProject?.name}
+          intro={amnrsProject?.intro}
+          services={amnrsProject?.services}
+          coverImg={amnrsProject?.mockup.src}
+        />
+        <ProjectCard
+          title={nhfcProject?.name}
+          intro={nhfcProject?.intro}
+          services={nhfcProject?.services}
+          coverImg={nhfcProject?.mockup.src}
+        />
+        <ProjectCard
+          title={techProject?.name}
+          intro={techProject?.intro}
+          services={techProject?.services}
+          coverImg={techProject?.mockup.src}
+        />
+        <ProjectCard
+          title={flowProject?.name}
+          intro={flowProject?.intro}
+          services={flowProject?.services}
+          coverImg={flowProject?.mockup.src}
+        />
+      </div>
     </main>
   );
 }

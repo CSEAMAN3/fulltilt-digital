@@ -32,18 +32,18 @@ export default function HomePage() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/arrow.svg"
-            alt=""
+            alt="arrow"
             width={10}
             style={{ width: "20px", height: "auto" }}
             className="group-hover:-rotate-45 transition-all duration-300"
           />
         </Link>
-        <Link href={"/"} className="font-bold flex gap-x-2 group w-fit">
+        <Link href={"/projects"} className="font-bold flex gap-x-2 group w-fit">
           View More Projects
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/arrow.svg"
-            alt=""
+            alt="arrow"
             width={10}
             style={{ width: "20px", height: "auto" }}
             className="group-hover:-rotate-45 transition-all duration-300"
