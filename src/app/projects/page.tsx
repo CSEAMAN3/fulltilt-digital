@@ -57,30 +57,35 @@ export default function ProjectsPage() {
           intro={frdProject?.intro}
           services={frdProject?.services}
           coverImg={frdProject?.mockup.src}
+          projectLink={frdProject?.projectLink}
         />
         <ProjectCard
           title={amnrsProject?.name}
           intro={amnrsProject?.intro}
           services={amnrsProject?.services}
           coverImg={amnrsProject?.mockup.src}
+          projectLink={amnrsProject?.projectLink}
         />
         <ProjectCard
           title={nhfcProject?.name}
           intro={nhfcProject?.intro}
           services={nhfcProject?.services}
           coverImg={nhfcProject?.mockup.src}
+          projectLink={nhfcProject?.projectLink}
         />
         <ProjectCard
           title={techProject?.name}
           intro={techProject?.intro}
           services={techProject?.services}
           coverImg={techProject?.mockup.src}
+          projectLink={techProject?.projectLink}
         />
         <ProjectCard
           title={flowProject?.name}
           intro={flowProject?.intro}
           services={flowProject?.services}
           coverImg={flowProject?.mockup.src}
+          projectLink={flowProject?.projectLink}
         />
       </div>
     </main>

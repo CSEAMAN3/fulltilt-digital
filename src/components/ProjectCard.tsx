@@ -19,6 +19,7 @@ interface ProjectCardProps {
   intro?: string;
   services?: ServiceObj[];
   coverImg?: keyof typeof Images;
+  projectLink?: string;
 }
 
 const MotionLink = motion.create(Link);
@@ -28,6 +29,7 @@ export default function ProjectCard({
   intro,
   services,
   coverImg,
+  projectLink,
 }: ProjectCardProps) {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -59,7 +61,7 @@ export default function ProjectCard({
   console.log(services);
   return (
     <MotionLink
-      href={`/`}
+      href={`/projects/${projectLink}`}
       onMouseMove={handleMouseMove}
       className="group relative block w-full overflow-hidden rounded-xl border border-brand-main bg-brand-accent-one/50 p-12 transition-all duration-300 hover:border-brand-main/80 hover:bg-brand-accent-one/90 hover:shadow-[0_0_40px_rgba(192,144,255,0.18)]"
     >

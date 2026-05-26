@@ -64,6 +64,7 @@ export type portfolioItem = {
     src: keyof typeof fulltiltImages;
     alt: string;
   };
+  projectLink: string;
 };
 
 export type Usp = {

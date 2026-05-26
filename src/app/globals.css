@@ -7,6 +7,8 @@
   --brand-main-dark: #ae72fc;
   --brand-accent-one: #d1ebf0;
   --brand-accent-two: #dbd3ef;
+  --frd-primary: #3b53a4;
+  --frd-accent: #f0b516;
 }
 
 @theme inline {
@@ -16,6 +18,8 @@
   --color-brand-main-dark: var(--brand-main-dark);
   --color-brand-accent-one: var(--brand-accent-one);
   --color-brand-accent-two: var(--brand-accent-two);
+  --color-frd-primary: var(--frd-primary);
+  --color-frd-accent: var(--frd-accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

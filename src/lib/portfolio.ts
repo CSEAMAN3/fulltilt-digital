@@ -15,6 +15,7 @@ export const portfolio: portfolioItem[] = [
       src: "frdMockup",
       alt: "change this",
     },
+    projectLink: "/first-response-drainage",
   },
   {
     name: "AM Norfolk Roofing Services",
@@ -29,6 +30,7 @@ export const portfolio: portfolioItem[] = [
       src: "amMockup",
       alt: "change this",
     },
+    projectLink: "/",
   },
   {
     name: "NH Football Coaching",
@@ -43,6 +45,7 @@ export const portfolio: portfolioItem[] = [
       src: "nhMockup",
       alt: "change this",
     },
+    projectLink: "/",
   },
   {
     name: "Flow Plumbing & Drainage",
@@ -53,6 +56,7 @@ export const portfolio: portfolioItem[] = [
       src: "flowMockup",
       alt: "change this",
     },
+    projectLink: "/",
   },
   {
     name: "Tech Educators",
@@ -63,5 +67,6 @@ export const portfolio: portfolioItem[] = [
       src: "techEdMockup",
       alt: "change this",
     },
+    projectLink: "/",
   },
 ];
