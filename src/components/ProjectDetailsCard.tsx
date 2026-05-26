@@ -1,0 +1,130 @@
+// "use client";
+
+// import Link from "next/link";
+
+// interface ProjectDetailsCardProps {
+//   title: string;
+//   content: string;
+// }
+
+// export default function ProjectDetailsCard({
+//   title,
+//   content,
+// }: ProjectDetailsCardProps) {
+//   return (
+//     <div className="bg-frd-primary p-12 rounded-2xl h-fit lg:col-span-2">
+//       <h1 className="text-frd-accent mb-8">
+//         <span className="font-bold block text-lg mb-8">Project Details</span>
+//         <span className="font-bold block text-sm mb-2">The Client</span>
+//         <span className="text-white block text-3xl font-bold mb-2">
+//           {title}
+//         </span>
+//         <span className="font-bold text-sm">Brand Refresh + Website</span>
+//       </h1>
+//       <p className="font-light text-white mb-8">{content}</p>
+//       <h2 className="font-bold text-white">Have a simlar project in mind?</h2>
+//       <Link
+//         href={"/contact"}
+//         className="font-bold text-lg text-frd-primary bg-frd-accent px-8 py-2 rounded-full mt-2 block w-fit hover:bg-white transition-colors duration-300"
+//       >
+//         Get In Touch
+//       </Link>
+//     </div>
+//   );
+// }
+
+"use client";
+
+import Link from "next/link";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+interface ProjectDetailsCardProps {
+  title: string;
+  content: string;
+  liveSite: string;
+  site: string;
+}
+
+export default function ProjectDetailsCard({
+  title,
+  content,
+  liveSite,
+  site,
+}: ProjectDetailsCardProps) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <motion.div
+      layout
+      className={`bg-frd-primary border border-frd-accent p-8 rounded-2xl h-fit lg:col-span-2 relative overflow-hidden`}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
+    >
+      {/* Top Bar */}
+      <div className="flex items-center justify-between gap-4">
+        <div>
+          <span className="font-bold block text-lg text-frd-accent">
+            Project Details
+          </span>
+        </div>
+
+        <motion.button
+          onClick={() => setIsOpen((prev) => !prev)}
+          className="z-10 shrink-0 border border-frd-accent text-frd-accent w-8 h-8 rounded-full grid place-content-center font-bold cursor-pointer"
+          aria-label={isOpen ? "Close project details" : "Open project details"}
+          animate={{ rotate: isOpen ? 45 : 0 }}
+        >
+          +
+        </motion.button>
+      </div>
+
+      {/* Expandable Content */}
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.div
+            key="content"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.35, ease: "easeInOut" }}
+            className="overflow-hidden"
+          >
+            <div className={"pt-8"}>
+              <h1 className="text-frd-accent mb-8">
+                <span className="font-bold block text-sm mb-2">The Client</span>
+
+                <span className="text-white block text-3xl font-bold mb-2">
+                  {title}
+                </span>
+
+                <span className="font-bold text-sm">
+                  Brand Refresh + Website
+                </span>
+              </h1>
+
+              <p className="font-light text-white mb-8">{content}</p>
+              <a
+                href={liveSite}
+                target="_blank"
+                className="font-bold flex gap-x-2 group w-fit text-frd-accent mb-8 hover:text-white"
+              >
+                Visit {site}
+              </a>
+
+              <h2 className="font-bold text-white mb-4">
+                Have a similar project in mind?
+              </h2>
+
+              <Link
+                href="/contact"
+                className="font-bold text-lg text-frd-primary bg-frd-accent px-8 py-2 rounded-full block w-fit hover:bg-white transition-colors duration-300"
+              >
+                Get In Touch
+              </Link>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
+  );
+}

@@ -1,5 +1,5 @@
+import ProjectDetailsCard from "@/src/components/ProjectDetailsCard";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function FirstResponseDrainageProjectPage() {
   return (
@@ -17,33 +17,12 @@ export default function FirstResponseDrainageProjectPage() {
         </div>
       </div>
       <div className="px-8 max-w-300 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mx-auto">
-        <div className="bg-frd-primary p-12 rounded-2xl h-fit lg:col-span-2">
-          <h1 className="text-frd-accent mb-8">
-            <span className="font-bold block text-lg mb-8">
-              Project Details
-            </span>
-            <span className="font-bold block text-sm mb-2">The Client</span>
-            <span className="text-white block text-3xl font-bold mb-2">
-              1st Response Drainage
-            </span>
-            <span className="font-bold text-sm">Brand Refresh + Website</span>
-          </h1>
-          <p className="font-light text-white mb-8">
-            Refreshed Branding and Next JS website designed and built for 1st
-            Response Drainage, designed and built with over 40+ local landing
-            pages to attract local residential clients with drainage issues
-            throughout East Anglia.
-          </p>
-          <h2 className="font-bold text-white">
-            Have a simlar project in mind?
-          </h2>
-          <Link
-            href={"/contact"}
-            className="font-bold text-lg text-frd-primary bg-frd-accent px-8 py-2 rounded-full mt-2 block w-fit hover:bg-white transition-colors duration-300"
-          >
-            Get In Touch
-          </Link>
-        </div>
+        <ProjectDetailsCard
+          title="1st Response Drainage"
+          content="Refreshed branding and bespoke Next.js website designed and built to help 1st Response Drainage generate more direct enquiries through improved visibility, stronger messaging and 40+ targeted local landing pages across East Anglia."
+          liveSite="https://www.1stresponsedrainage.co.uk"
+          site="www.1stresponsedrainage.co.uk"
+        />
         <div className="lg:col-span-3">
           <p className="font-bold mb-8 text-xl text-pretty">
             Brand refresh and high-performance website for a drainage specialist
