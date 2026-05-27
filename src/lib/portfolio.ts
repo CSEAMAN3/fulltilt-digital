@@ -45,7 +45,7 @@ export const portfolio: portfolioItem[] = [
       src: "nhMockup",
       alt: "change this",
     },
-    projectLink: "/",
+    projectLink: "/nh-football-coaching",
   },
   {
     name: "Flow Plumbing & Drainage",
