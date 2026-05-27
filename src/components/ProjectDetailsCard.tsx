@@ -57,20 +57,20 @@ export default function ProjectDetailsCard({
   return (
     <motion.div
       layout
-      className={`bg-frd-primary border border-frd-accent p-8 rounded-2xl h-fit lg:col-span-2 relative overflow-hidden`}
+      className={`bg-brand-accent-one border border-brand-main p-8 rounded-2xl h-fit lg:col-span-2 relative overflow-hidden`}
       transition={{ duration: 0.4, ease: "easeInOut" }}
     >
       {/* Top Bar */}
       <div className="flex items-center justify-between gap-4">
         <div>
-          <span className="font-bold block text-lg text-frd-accent">
+          <span className="font-bold block text-lg text-black">
             Project Details
           </span>
         </div>
 
         <motion.button
           onClick={() => setIsOpen((prev) => !prev)}
-          className="z-10 shrink-0 border border-frd-accent text-frd-accent w-8 h-8 rounded-full grid place-content-center font-bold cursor-pointer"
+          className="z-10 shrink-0 border border-brand-main-dark text-brand-black w-8 h-8 rounded-full grid place-content-center font-bold cursor-pointer hover:bg-brand-main-dark"
           aria-label={isOpen ? "Close project details" : "Open project details"}
           animate={{ rotate: isOpen ? 45 : 0 }}
         >
@@ -90,10 +90,10 @@ export default function ProjectDetailsCard({
             className="overflow-hidden"
           >
             <div className={"pt-8"}>
-              <h1 className="text-frd-accent mb-8">
+              <h1 className="text-brand-main-dark mb-8">
                 <span className="font-bold block text-sm mb-2">The Client</span>
 
-                <span className="text-white block text-3xl font-bold mb-2">
+                <span className="text-black block text-3xl font-bold mb-2">
                   {title}
                 </span>
 
@@ -102,22 +102,22 @@ export default function ProjectDetailsCard({
                 </span>
               </h1>
 
-              <p className="font-light text-white mb-8">{content}</p>
+              <p className="font-light text-black mb-8">{content}</p>
               <a
                 href={liveSite}
                 target="_blank"
-                className="font-bold flex gap-x-2 group w-fit text-frd-accent mb-8 hover:text-white"
+                className="font-bold flex gap-x-2 group w-fit text-black mb-8 hover:text-brand-main-dark"
               >
                 Visit {site}
               </a>
 
-              <h2 className="font-bold text-white mb-4">
+              <h2 className="font-bold text-black mb-4">
                 Have a similar project in mind?
               </h2>
 
               <Link
                 href="/contact"
-                className="font-bold text-lg text-frd-primary bg-frd-accent px-8 py-2 rounded-full block w-fit hover:bg-white transition-colors duration-300"
+                className="font-bold text-lg text-black bg-brand-main px-8 py-2 rounded-full block w-fit hover:bg-brand-main-dark transition-colors duration-300"
               >
                 Get In Touch
               </Link>

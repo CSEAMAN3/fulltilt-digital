@@ -21,14 +21,14 @@ export default function FirstResponseDrainageProjectPage() {
           title="1st Response Drainage"
           content="Refreshed branding and bespoke Next.js website designed and built to help 1st Response Drainage generate more direct enquiries through improved visibility, stronger messaging and 40+ targeted local landing pages across East Anglia."
           liveSite="https://www.1stresponsedrainage.co.uk"
-          site="www.1stresponsedrainage.co.uk"
+          site="1stresponsedrainage.co.uk"
         />
         <div className="lg:col-span-3">
           <p className="font-bold mb-8 text-xl text-pretty">
             Brand refresh and high-performance website for a drainage specialist
             serving homeowners and businesses throughout East Anglia.
           </p>
-          <h3 className="text-3xl text-balance font-bold text-frd-primary mb-8">
+          <h3 className="text-3xl text-balance font-bold text-brand-main-dark mb-8">
             Making Drainage Issues Less Scary
           </h3>
           <p className="mb-4">
@@ -51,7 +51,7 @@ export default function FirstResponseDrainageProjectPage() {
             sources of work and missing opportunities to grow its residential
             customer base.
           </p>
-          <h4 className="font-bold text-frd-primary">Challenge</h4>
+          <h4 className="font-bold text-brand-main-dark">Challenge</h4>
           <p className="mb-4">
             Create a modern, trustworthy brand and website that would help 1st
             Response Drainage stand out locally, improve visibility across East
@@ -69,7 +69,7 @@ export default function FirstResponseDrainageProjectPage() {
             so the website needed to feel clear, dependable and easy to use from
             the very first interaction.
           </p>
-          <h4 className="font-bold text-frd-primary">Solution</h4>
+          <h4 className="font-bold text-brand-main-dark">Solution</h4>
           <p className="mb-4">
             We delivered a complete brand refresh alongside a fully bespoke
             website designed around performance, trust and long-term growth.
@@ -107,7 +107,7 @@ export default function FirstResponseDrainageProjectPage() {
             The result was a website designed not just to look better — but to
             actively support business growth.
           </p>
-          <h4 className="font-bold text-frd-primary">Outcome</h4>
+          <h4 className="font-bold text-brand-main-dark">Outcome</h4>
           <p className="mb-4">
             The new brand and website gave 1st Response Drainage a far stronger
             online presence and a platform built for long-term visibility and
