@@ -30,7 +30,7 @@ export const portfolio: portfolioItem[] = [
       src: "amMockup",
       alt: "change this",
     },
-    projectLink: "/",
+    projectLink: "/am-norfolk-roofing-services",
   },
   {
     name: "NH Football Coaching",

@@ -22,6 +22,7 @@ export default function FirstResponseDrainageProjectPage() {
           content="Refreshed branding and bespoke Next.js website designed and built to help 1st Response Drainage generate more direct enquiries through improved visibility, stronger messaging and 40+ targeted local landing pages across East Anglia."
           liveSite="https://www.1stresponsedrainage.co.uk"
           site="1stresponsedrainage.co.uk"
+          services="Brand Refresh + Website"
         />
         <div className="lg:col-span-3">
           <p className="font-bold mb-8 text-xl text-pretty">
