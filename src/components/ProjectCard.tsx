@@ -58,7 +58,7 @@ export default function ProjectCard({
   }
 
   const imageKey = coverImg ?? "teamPhotoOne";
-  console.log(services);
+  // console.log(services);
   return (
     <MotionLink
       href={`/projects/${projectLink}`}

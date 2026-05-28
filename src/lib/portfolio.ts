@@ -56,7 +56,7 @@ export const portfolio: portfolioItem[] = [
       src: "flowMockup",
       alt: "change this",
     },
-    projectLink: "/",
+    projectLink: "/flow-plumbing-and-drainage",
   },
   {
     name: "Tech Educators",
@@ -67,6 +67,6 @@ export const portfolio: portfolioItem[] = [
       src: "techEdMockup",
       alt: "change this",
     },
-    projectLink: "/",
+    projectLink: "/tech-educators",
   },
 ];
