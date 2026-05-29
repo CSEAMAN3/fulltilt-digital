@@ -261,4 +261,49 @@ export const howWeWorkSteps: Steps[] = [
     paragraphTwo:
       "The goal is steady improvement in visibility, traffic and enquiries from search.",
   },
+  {
+    id: 30,
+    catagory: "social",
+    title: "01 - Discovery & Direction",
+    paragraph:
+      "We start by understanding your business, your audience and what you want your social media to achieve.",
+    paragraphTwo:
+      "From there we define the tone, themes and direction for your content so everything reflects your brand and the work you do.",
+  },
+  {
+    id: 31,
+    catagory: "social",
+    title: "02 - Content Planning",
+    paragraph:
+      "Next we plan the type of content your business should share, from project updates and behind-the-scenes moments to educational or promotional posts.",
+    paragraphTwo:
+      "This stage ensures your social media remains consistent, purposeful and aligned with your wider marketing goals.",
+  },
+  {
+    id: 32,
+    catagory: "social",
+    title: "03 - Content Creation",
+    paragraph:
+      "We capture or create the content your business needs, whether that's photography, video, graphics or written posts.",
+    paragraphTwo:
+      "The focus is always on showing your work clearly and presenting your business professionally online.",
+  },
+  {
+    id: 33,
+    catagory: "social",
+    title: "04 - Scheduling & Publishing",
+    paragraph:
+      "Once the content is prepared, we organise and schedule posts so your business stays active and visible.",
+    paragraphTwo:
+      "Regular posting helps maintain momentum and ensures your brand remains present in front of your audience.",
+  },
+  {
+    id: 34,
+    catagory: "social",
+    title: "05 - Review & Ongoing Growth",
+    paragraph:
+      "Social media works best when it evolves over time. We review what content performs well and refine the approach to keep improving results.",
+    paragraphTwo:
+      "The goal is consistent visibility, stronger engagement and long-term growth for your business.",
+  },
 ];
