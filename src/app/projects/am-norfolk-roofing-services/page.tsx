@@ -10,8 +10,6 @@ export default function AmNorfolkRoofingServicesPage() {
           <Image
             src="/images/am-norfolk-roofing-laptop-mockup.png"
             alt="website design for first response drainage a local drainage company in the East of England"
-            width={1000}
-            height={1000}
             priority
             className="w-full h-auto"
           />
