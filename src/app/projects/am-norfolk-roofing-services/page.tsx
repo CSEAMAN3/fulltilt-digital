@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ProjectDetailsCard from "@/src/components/ProjectDetailsCard";
+import HomeContactSection from "@/src/components/HomeContactSection";
 
 export default function AmNorfolkRoofingServicesPage() {
   return (
@@ -120,6 +121,12 @@ export default function AmNorfolkRoofingServicesPage() {
             growth throughout Norfolk.
           </p>
         </div>
+      </div>
+      <div className="py-8">
+        <HomeContactSection
+          heading="Have a similar project in mind?"
+          paragraph="Every project starts with a conversation. We'll take the time to understand your business, your goals and what success looks like, before recommending the right combination of strategy, design, content and technology to help you get there."
+        />
       </div>
     </main>
   );
