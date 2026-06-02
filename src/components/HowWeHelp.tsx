@@ -34,7 +34,7 @@ export default function HowWeHelp({ data, title }: HowWeHelpProps) {
           poster="/images/video-poster.jpg"
           className="w-full rounded-2xl"
         >
-          <source src="/videos/local-trade-video.mp4" type="video/mp4" />
+          <source src="/videos/bw-rip-transition.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
