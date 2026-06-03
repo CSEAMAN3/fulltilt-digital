@@ -2644,7 +2644,7 @@ export default function PricingSlider({ data }: PricingSliderProps) {
                   alt=""
                   width={140}
                   height={140}
-                  className="pointer-events-none absolute bottom-0 right-0 z-0 w-60 h-auto"
+                  className="pointer-events-none absolute bottom-0 right-0 z-0 w-40 sm:w-60 h-auto"
                 />
                 <button
                   type="button"
