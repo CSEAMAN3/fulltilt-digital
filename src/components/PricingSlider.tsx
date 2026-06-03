@@ -2638,6 +2638,14 @@ export default function PricingSlider({ data }: PricingSliderProps) {
                 // className="relative bg-brand-accent-one px-8 py-16 min-w-0 overflow-hidden"
                 className="relative bg-brand-accent-one px-8 py-24 w-full min-w-0 overflow-hidden"
               >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/points-v2.svg"
+                  alt=""
+                  width={140}
+                  height={140}
+                  className="pointer-events-none absolute bottom-0 right-0 z-0 w-60 h-auto"
+                />
                 <button
                   type="button"
                   onClick={() => toggleCard(s.id)}
@@ -2701,14 +2709,6 @@ export default function PricingSlider({ data }: PricingSliderProps) {
                     <p className="font-bold text-sm">{s.badgeText}</p>
                   </div>
                 )}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/points-v2.svg"
-                  alt=""
-                  width={140}
-                  height={140}
-                  className="pointer-events-none absolute bottom-0 right-0 z-0 w-60 h-auto"
-                />
               </motion.div>
             </motion.div>
           );
