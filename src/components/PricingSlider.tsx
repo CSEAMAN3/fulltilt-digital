@@ -2673,7 +2673,7 @@ export default function PricingSlider({ data }: PricingSliderProps) {
                   </div>
                 </button>
                 {/* content */}
-                <div className="z-10">
+                <div className="relative z-10">
                   <div>
                     <h2 className="text-2xl font-bold leading-[0.8] min-w-75 mb-8">
                       <span className="block text-base">{s.headingSmall}</span>
