@@ -78,3 +78,19 @@ export type Faq = {
   question: string;
   answer: string;
 };
+
+export type Pricing = {
+  id: number;
+  service: string;
+  headingSmall: string;
+  headingLarge: string;
+  paragraph: string;
+  priceLarge: string;
+  priceSmall?: string;
+  monthlyCarePlan: boolean;
+  monthlyCarePlanPrice?: string;
+  bulletHeading: string;
+  bulletList: string[];
+  badge: boolean;
+  badgeText?: string;
+};

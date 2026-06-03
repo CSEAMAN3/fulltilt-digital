@@ -5,6 +5,7 @@
   --foreground: #171717; */
   --brand-main: #c090ff;
   --brand-main-dark: #ae72fc;
+  --brand-main-extra-dark: #8545d7;
   --brand-accent-one: #d1ebf0;
   --brand-accent-two: #dbd3ef;
   --frd-primary: #3b53a4;
@@ -16,6 +17,7 @@
   --color-foreground: var(--foreground); */
   --color-brand-main: var(--brand-main);
   --color-brand-main-dark: var(--brand-main-dark);
+  --color-brand-main-extra-dark: var(--brand-main-extra-dark);
   --color-brand-accent-one: var(--brand-accent-one);
   --color-brand-accent-two: var(--brand-accent-two);
   --color-frd-primary: var(--frd-primary);

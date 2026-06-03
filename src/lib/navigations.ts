@@ -10,6 +10,10 @@ export const navigations: Nav[] = [
     title: "Our Work",
   },
   {
+    href: "/pricing",
+    title: "Pricing",
+  },
+  {
     href: "/blog",
     title: "Insights",
   },
