@@ -2413,6 +2413,14 @@ export default function PricingSlider({ data }: PricingSliderProps) {
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [activeIndex, setActiveIndex] = useState(0);
 
+  let cardHeight = "64rem";
+
+  if (data === "web") {
+    cardHeight = "64rem";
+  } else if (data === "brand") {
+    cardHeight = "44rem";
+  }
+
   const [expandedCardId, setExpandedCardId] = useState<number | null>(null);
   const [visibleDetailsId, setVisibleDetailsId] = useState<number | null>(null);
   const [sideLayoutId, setSideLayoutId] = useState<number | null>(null);
@@ -2655,7 +2663,7 @@ export default function PricingSlider({ data }: PricingSliderProps) {
                       }
                     : {
                         // width: "100%",
-                        height: isExpanded ? "64rem" : "100%",
+                        height: isExpanded ? cardHeight : "100%",
                       }
                 }
                 transition={{

@@ -37,6 +37,11 @@ export default function PricingPage() {
         <p className="font-light">here is some text</p>
         <PricingSlider data="web" />
       </div>
+      <div className="px-8 max-w-300 mx-auto">
+        <h2 className="font-bold text-xl">Brand & Identity Pricing</h2>
+        <p className="font-light">here is some text</p>
+        <PricingSlider data="brand" />
+      </div>
     </main>
   );
 }
