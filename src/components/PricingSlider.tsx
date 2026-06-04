@@ -2798,8 +2798,10 @@ export default function PricingSlider({ data }: PricingSliderProps) {
                   </AnimatePresence>
                 </div>
                 {s.badge && (
-                  <div className="absolute top-5 left-8 bg-brand-main-dark px-8 py-1 rounded-full">
-                    <p className="font-bold text-sm">{s.badgeText}</p>
+                  <div className="absolute top-5 left-8 bg-brand-main-extra-dark px-8 py-1 rounded-full">
+                    <p className="font-bold text-sm text-white">
+                      {s.badgeText}
+                    </p>
                   </div>
                 )}
               </motion.div>
