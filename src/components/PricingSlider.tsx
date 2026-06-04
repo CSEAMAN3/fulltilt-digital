@@ -2401,7 +2401,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { pricing } from "../lib/pricing";
 
 interface PricingSliderProps {
@@ -2415,6 +2415,7 @@ export default function PricingSlider({ data }: PricingSliderProps) {
 
   const [expandedCardId, setExpandedCardId] = useState<number | null>(null);
   const [visibleDetailsId, setVisibleDetailsId] = useState<number | null>(null);
+  const [sideLayoutId, setSideLayoutId] = useState<number | null>(null);
 
   const rafId = useRef<number | null>(null);
   const detailsTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -2469,6 +2470,29 @@ export default function PricingSlider({ data }: PricingSliderProps) {
     if (shrinkTimer.current) clearTimeout(shrinkTimer.current);
   };
 
+  //   const toggleCard = (id: number) => {
+  //     clearTimers();
+
+  //     const isCurrentlyOpen = expandedCardId === id;
+
+  //     if (isCurrentlyOpen) {
+  //       setVisibleDetailsId(null);
+
+  //       shrinkTimer.current = setTimeout(() => {
+  //         setExpandedCardId(null);
+  //       }, 300);
+
+  //       return;
+  //     }
+
+  //     setVisibleDetailsId(null);
+  //     setExpandedCardId(id);
+
+  //     detailsTimer.current = setTimeout(() => {
+  //       setVisibleDetailsId(id);
+  //     }, 520);
+  //   };
+
   const toggleCard = (id: number) => {
     clearTimers();
 
@@ -2478,6 +2502,7 @@ export default function PricingSlider({ data }: PricingSliderProps) {
       setVisibleDetailsId(null);
 
       shrinkTimer.current = setTimeout(() => {
+        setSideLayoutId(null);
         setExpandedCardId(null);
       }, 300);
 
@@ -2488,6 +2513,7 @@ export default function PricingSlider({ data }: PricingSliderProps) {
     setExpandedCardId(id);
 
     detailsTimer.current = setTimeout(() => {
+      setSideLayoutId(id);
       setVisibleDetailsId(id);
     }, 520);
   };
@@ -2590,6 +2616,7 @@ export default function PricingSlider({ data }: PricingSliderProps) {
         {servicePackages.map((s, i) => {
           const isExpanded = expandedCardId === s.id;
           const showDetails = visibleDetailsId === s.id;
+          const useSideLayout = sideLayoutId === s.id;
           return (
             <motion.div
               //   key={s.id}
@@ -2673,36 +2700,86 @@ export default function PricingSlider({ data }: PricingSliderProps) {
                   </div>
                 </button>
                 {/* content */}
-                <div className="relative z-10">
+                <div
+                  //   className={`relative z-10 ${showDetails ? "md:grid md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:gap-8" : ""}`}
+                  className={`relative z-10 ${useSideLayout ? "md:grid md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:gap-8" : ""}`}
+                >
                   <div>
-                    <h2 className="text-2xl font-bold leading-[0.8] min-w-75 mb-8">
-                      <span className="block text-base">{s.headingSmall}</span>
-                      {s.headingLarge}
-                    </h2>
-                    <p className="text-pretty md:max-w-[32ch] min-h-40 mb-4">
-                      {s.paragraph}
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg">Starting from</h3>
-                    <p className="font-bold text-4xl text-brand-main-extra-dark">
-                      {s.priceLarge}{" "}
-                      <span className="text-base">{s.priceSmall}</span>
-                    </p>
-                  </div>
-                  {s.monthlyCarePlan && (
-                    <div className="mt-4">
-                      <h4 className="font-bold text-sm">Monthly Care Plan</h4>
-                      <p className="font-semibold text-sm text-brand-main-extra-dark mb-2">
-                        {s.monthlyCarePlanPrice} + VAT per month
-                      </p>
-                      <p className="font-light text-sm text-balance max-w-[30ch]">
-                        Includes: secure hosting, technical maintenance,
-                        software updates, website monitoring, Email and phone
-                        Support
+                    <div>
+                      <h2 className="text-2xl font-bold leading-[0.8] min-w-75 mb-8">
+                        <span className="block text-base">
+                          {s.headingSmall}
+                        </span>
+                        {s.headingLarge}
+                      </h2>
+
+                      <p className="text-pretty md:max-w-[32ch] min-h-40 mb-4">
+                        {s.paragraph}
                       </p>
                     </div>
-                  )}
+
+                    <div>
+                      <h3 className="font-bold text-lg">Starting from</h3>
+
+                      <p className="font-bold text-4xl text-brand-main-extra-dark">
+                        {s.priceLarge}{" "}
+                        <span className="text-base">{s.priceSmall}</span>
+                      </p>
+                    </div>
+
+                    {s.monthlyCarePlan && (
+                      <div className="mt-4">
+                        <h4 className="font-bold text-sm">Monthly Care Plan</h4>
+
+                        <p className="font-semibold text-sm text-brand-main-extra-dark mb-2">
+                          {s.monthlyCarePlanPrice} + VAT per month
+                        </p>
+
+                        <p className="font-light text-sm text-balance max-w-[30ch]">
+                          Includes: secure hosting, technical maintenance,
+                          software updates, website monitoring, Email and phone
+                          Support
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                  <AnimatePresence>
+                    {showDetails && (
+                      <motion.div
+                        initial={{
+                          opacity: 0,
+                          x: isMd ? 16 : 0,
+                          y: isMd ? 0 : 12,
+                        }}
+                        animate={{
+                          opacity: 1,
+                          x: 0,
+                          y: 0,
+                        }}
+                        exit={{
+                          opacity: 0,
+                          x: isMd ? 16 : 0,
+                          y: isMd ? 0 : 12,
+                        }}
+                        transition={{
+                          duration: 0.25,
+                          ease: "easeOut",
+                        }}
+                        className="mt-8 md:mt-0"
+                      >
+                        <h4 className="font-bold mb-4">{s.bulletHeading}</h4>
+
+                        <ul className="space-y-2 text-sm font-light">
+                          {s.bulletList.map((item) => (
+                            <li key={item} className="flex gap-2">
+                              <span className="font-bold">•</span>
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
                 {s.badge && (
                   <div className="absolute top-5 left-8 bg-brand-main-dark px-8 py-1 rounded-full">
