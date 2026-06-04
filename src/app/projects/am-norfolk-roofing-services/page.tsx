@@ -30,7 +30,7 @@ export default function AmNorfolkRoofingServicesPage() {
             Brand identity and bespoke website for a Norfolk roofing company
             focused on residential and commercial roofing services.
           </p>
-          <h3 className="text-3xl text-balance font-bold text-brand-main-dark mb-8">
+          <h3 className="text-3xl text-balance font-bold text-brand-main-extra-dark mb-8">
             Building a Roofing Brand People Could Trust
           </h3>
           <p className="mb-4">
@@ -49,7 +49,7 @@ export default function AmNorfolkRoofingServicesPage() {
             clear platform for customers to learn about the business, explore
             services or make contact.
           </p>
-          <h4 className="font-bold text-brand-main-dark">Challenge</h4>
+          <h4 className="font-bold text-brand-main-extra-dark">Challenge</h4>
           <p className="mb-4">
             Create a trustworthy, modern brand and lead-focused website that
             would help establish credibility, improve visibility and support
@@ -66,7 +66,7 @@ export default function AmNorfolkRoofingServicesPage() {
             simple path for customers to make enquiries across both mobile and
             desktop devices.
           </p>
-          <h4 className="font-bold text-brand-main-dark">Solution</h4>
+          <h4 className="font-bold text-brand-main-extra-dark">Solution</h4>
           <p className="mb-4">
             We developed a complete visual identity and bespoke Next.js website
             designed around trust, clarity and lead generation.
@@ -98,7 +98,7 @@ export default function AmNorfolkRoofingServicesPage() {
             launch, the website was designed to feel professional, consistent
             and scalable — giving the business a strong platform to grow from.
           </p>
-          <h4 className="font-bold text-brand-main-dark">Outcome</h4>
+          <h4 className="font-bold text-brand-main-extra-dark">Outcome</h4>
           <p className="mb-4">
             AM Norfolk Roofing Services launched with a professional brand
             identity and high-performing website that immediately gave the

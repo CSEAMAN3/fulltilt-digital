@@ -30,7 +30,7 @@ export default function page() {
             Bespoke website and photography for a Norfolk plumbing and drainage
             company serving residential and commercial customers.
           </p>
-          <h3 className="text-3xl text-balance font-bold text-brand-main-dark mb-8">
+          <h3 className="text-3xl text-balance font-bold text-brand-main-extra-dark mb-8">
             Creating A More Professional Online Presence
           </h3>
           <p className="mb-4">
@@ -50,7 +50,7 @@ export default function page() {
             The website generated very few enquiries and offered little to help
             build trust with potential customers.
           </p>
-          <h4 className="font-bold text-brand-main-dark">Challenge</h4>
+          <h4 className="font-bold text-brand-main-extra-dark">Challenge</h4>
           <p className="mb-4">
             Create a modern, professional website that would improve trust,
             communicate services more clearly and help generate more direct
@@ -67,7 +67,7 @@ export default function page() {
             Improving visibility and helping search engines better understand
             the business was also an important part of the project.
           </p>
-          <h4 className="font-bold text-brand-main-dark">Solution</h4>
+          <h4 className="font-bold text-brand-main-extra-dark">Solution</h4>
           <p className="mb-4">
             We designed and built a bespoke Next.js website focused around
             trust, clarity and lead generation.
@@ -91,7 +91,7 @@ export default function page() {
             professional, built trust quickly and made it easy for customers to
             enquire.
           </p>
-          <h4 className="font-bold text-brand-main-dark">Outcome</h4>
+          <h4 className="font-bold text-brand-main-extra-dark">Outcome</h4>
           <p className="mb-4">
             Flow Plumbing & Drainage now has a far stronger and more
             professional online presence that better reflects the quality of the

@@ -37,7 +37,7 @@ export default function ProjectDetailsCard({
 
         <motion.button
           onClick={() => setIsOpen((prev) => !prev)}
-          className="z-10 shrink-0 border border-brand-main-dark text-brand-black w-8 h-8 rounded-full grid place-content-center font-bold cursor-pointer hover:bg-brand-main-dark"
+          className="z-10 shrink-0 border border-black text-brand-black w-8 h-8 rounded-full grid place-content-center font-bold cursor-pointer hover:bg-brand-main-dark"
           aria-label={isOpen ? "Close project details" : "Open project details"}
           animate={{ rotate: isOpen ? 45 : 0 }}
         >
@@ -57,7 +57,7 @@ export default function ProjectDetailsCard({
             className="overflow-hidden"
           >
             <div className={"pt-8"}>
-              <h1 className="text-brand-main-dark mb-8">
+              <h1 className="text-brand-main-extra-dark mb-8">
                 <span className="font-bold block text-sm mb-2">The Client</span>
 
                 <span className="text-black block text-3xl font-bold mb-2">
@@ -71,7 +71,7 @@ export default function ProjectDetailsCard({
               <a
                 href={liveSite}
                 target="_blank"
-                className="font-bold flex gap-x-2 group w-fit text-black mb-8 hover:text-brand-main-dark"
+                className="font-bold flex gap-x-2 group w-fit text-black mb-8 hover:text-brand-main-extra-dark"
               >
                 Visit {site}
               </a>
@@ -82,7 +82,7 @@ export default function ProjectDetailsCard({
 
               <Link
                 href="/contact"
-                className="font-bold text-lg text-black bg-brand-main px-8 py-2 rounded-full block w-fit hover:bg-brand-main-dark transition-colors duration-300"
+                className="font-bold text-lg text-white bg-brand-main-extra-dark px-8 py-2 rounded-full block w-fit hover:bg-brand-main-dark transition-colors duration-300"
               >
                 Get In Touch
               </Link>

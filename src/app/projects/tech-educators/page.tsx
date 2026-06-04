@@ -23,7 +23,7 @@ export default function page() {
             Event filming, interviews and video production for a three-day tech
             hackathon delivered by Tech Educators.
           </p>
-          <h3 className="text-3xl text-balance font-bold text-brand-main-dark mb-8">
+          <h3 className="text-3xl text-balance font-bold text-brand-main-extra-dark mb-8">
             Capturing The Energy Behind HackEd
           </h3>
           <p className="mb-4">
@@ -42,7 +42,7 @@ export default function page() {
             showcase the experience itself and support future promotion,
             sponsorship and growth.
           </p>
-          <h4 className="font-bold text-brand-main-dark">Challenge</h4>
+          <h4 className="font-bold text-brand-main-extra-dark">Challenge</h4>
           <p className="mb-4">
             Create a high-energy video campaign that captured the full HackEd
             experience while communicating the impact and value of the event to
@@ -64,7 +64,7 @@ export default function page() {
             captured with organisers, mentors and students to help communicate
             the purpose and impact of HackEd more clearly.
           </p>
-          <h4 className="font-bold text-brand-main-dark">Solution</h4>
+          <h4 className="font-bold text-brand-main-extra-dark">Solution</h4>
           <p className="mb-4">
             We provided full event filming and post-production coverage across
             all three days of HackEd.
@@ -99,7 +99,7 @@ export default function page() {
             not only to document the event, but to actively support the future
             growth and visibility of HackEd itself.
           </p>
-          <h4 className="font-bold text-brand-main-dark">Outcome</h4>
+          <h4 className="font-bold text-brand-main-extra-dark">Outcome</h4>
           <p className="mb-4">
             The final content gave Tech Educators a professional, engaging
             showcase piece capable of communicating the atmosphere and impact of

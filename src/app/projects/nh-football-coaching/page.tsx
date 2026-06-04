@@ -30,7 +30,7 @@ export default function page() {
             Brand identity, bespoke website and photography for a Norwich
             football coaching business focused on youth player development.
           </p>
-          <h3 className="text-3xl text-balance font-bold text-brand-main-dark mb-8">
+          <h3 className="text-3xl text-balance font-bold text-brand-main-extra-dark mb-8">
             Creating A Coaching Brand Built To Stand Out
           </h3>
           <p className="mb-4">
@@ -50,7 +50,7 @@ export default function page() {
             platform for parents to learn more about the coaching sessions,
             build trust in the business or make enquiries easily.
           </p>
-          <h4 className="font-bold text-brand-main-dark">Challenge</h4>
+          <h4 className="font-bold text-brand-main-extra-dark">Challenge</h4>
           <p className="mb-4">
             Create a professional visual identity and website that would help NH
             Football Coaching stand out locally, build trust with parents and
@@ -72,7 +72,7 @@ export default function page() {
             strong visuals, the website would struggle to communicate the
             energy, atmosphere and quality of the coaching sessions.
           </p>
-          <h4 className="font-bold text-brand-main-dark">Solution</h4>
+          <h4 className="font-bold text-brand-main-extra-dark">Solution</h4>
           <p className="mb-4">
             We created a new visual identity, bespoke Next.js website and
             professional photography library designed specifically around the NH
@@ -107,7 +107,7 @@ export default function page() {
             section, about page and streamlined contact experience focused on
             encouraging enquiries from parents.
           </p>
-          <h4 className="font-bold text-brand-main-dark">Outcome</h4>
+          <h4 className="font-bold text-brand-main-extra-dark">Outcome</h4>
           <p className="mb-4">
             NH Football Coaching launched with a far more professional and
             recognisable presence both online and offline.
