@@ -279,7 +279,7 @@ export const pricing: Pricing[] = [
     badgeText: "Most Popular",
   },
   {
-    id: 12,
+    id: 13,
     service: "seo",
     headingSmall: "Target New Areas",
     headingLarge: "Local SEO Expansion",
@@ -300,7 +300,7 @@ export const pricing: Pricing[] = [
     badge: false,
   },
   {
-    id: 13,
+    id: 14,
     service: "graphic",
     headingSmall: "Create Assets",
     headingLarge: "Graphic Design",
@@ -321,7 +321,7 @@ export const pricing: Pricing[] = [
     badge: false,
   },
   {
-    id: 14,
+    id: 15,
     service: "graphic",
     headingSmall: "Promote Your Business",
     headingLarge: "Marketing Materials",
@@ -341,7 +341,7 @@ export const pricing: Pricing[] = [
     badge: false,
   },
   {
-    id: 15,
+    id: 16,
     service: "graphic",
     headingSmall: "Stand Out",
     headingLarge: "Custom Illustration",
