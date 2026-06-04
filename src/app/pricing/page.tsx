@@ -42,6 +42,13 @@ export default function PricingPage() {
         <p className="font-light">here is some text</p>
         <PricingSlider data="brand" />
       </div>
+      <div className="px-8 max-w-300 mx-auto">
+        <h2 className="font-bold text-xl">
+          Photography & Video Production Pricing
+        </h2>
+        <p className="font-light">here is some text</p>
+        <PricingSlider data="photo" />
+      </div>
     </main>
   );
 }
