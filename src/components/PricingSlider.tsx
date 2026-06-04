@@ -2655,7 +2655,7 @@ export default function PricingSlider({ data }: PricingSliderProps) {
                       }
                     : {
                         // width: "100%",
-                        height: isExpanded ? "60rem" : "100%",
+                        height: isExpanded ? "64rem" : "100%",
                       }
                 }
                 transition={{
