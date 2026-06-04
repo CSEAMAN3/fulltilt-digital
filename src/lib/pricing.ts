@@ -176,7 +176,7 @@ export const pricing: Pricing[] = [
     headingSmall: "Capture Attention",
     headingLarge: "Photography",
     paragraph:
-      "Professional photography created to showcase your business, your people and the quality of your work. Perfect for businesses looking to replace stock imagery with authentic visuals that build trust and strengthen their online presence.",
+      "Professional photography designed to showcase your business, your people and the quality of your work. Perfect for businesses looking to replace stock imagery with authentic visuals that build trust online.",
     priceLarge: "£200",
     priceSmall: "+ VAT",
     monthlyCarePlan: false,
