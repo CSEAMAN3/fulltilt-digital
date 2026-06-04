@@ -2425,6 +2425,8 @@ export default function PricingSlider({ data }: PricingSliderProps) {
     cardHeight = "46rem";
   } else if (data === "graphic") {
     cardHeight = "46rem";
+  } else if (data === "social") {
+    cardHeight = "46rem";
   }
 
   const [expandedCardId, setExpandedCardId] = useState<number | null>(null);
