@@ -34,7 +34,7 @@ export const pricing: Pricing[] = [
     headingSmall: "Grow Online",
     headingLarge: "Multi-Page Website",
     paragraph:
-      "Designed for businesses that mean business. Our multi-page websites provide the flexibility to showcase your services, build trust with potential customers and create a stronger foundation for long-term growth.",
+      "Ideal for growing businesses looking to showcase their services, build trust with potential customers and create a stronger online presence.",
     priceLarge: "£1250",
     priceSmall: "+ VAT",
     monthlyCarePlan: true,
@@ -63,7 +63,7 @@ export const pricing: Pricing[] = [
     headingSmall: "Scale Further",
     headingLarge: "Growth Website",
     paragraph:
-      "Designed for businesses that need more content, more services, more locations & more room to grow. Ideal for established businesses looking to improve visibility, expand into new areas or create a stronger online presence.",
+      "Built for established businesses that need more content, more services, more locations and more room to grow online.",
     priceLarge: "£2500",
     priceSmall: "+ VAT",
     monthlyCarePlan: true,
@@ -198,7 +198,7 @@ export const pricing: Pricing[] = [
     headingSmall: "Bring It To Life",
     headingLarge: "Photography + Video",
     paragraph:
-      "Combine professional photography with engaging video content to create a stronger online presence. Ideal for businesses looking to showcase their services across websites, social media and marketing campaigns.",
+      "Combine professional photography and video content to showcase your business across websites, social media and marketing campaigns. Ideal for businesses looking to create a stronger brand presence and connect with their audience.",
     priceLarge: "£600",
     priceSmall: "+ VAT",
     monthlyCarePlan: false,
@@ -217,9 +217,9 @@ export const pricing: Pricing[] = [
     id: 10,
     service: "photo",
     headingSmall: "Tell Your Story",
-    headingLarge: "Event & Promotional Video",
+    headingLarge: "Event Videography",
     paragraph:
-      "Professional video production designed to capture events, showcase your business and communicate what makes you different. From customer testimonials and promotional films to event coverage and social content, we'll help bring your story to life.",
+      "Professional video production designed to showcase your business, communicate what makes you different and bring your story to life. Perfect for businesses looking to engage customers and strengthen their online presence.",
     priceLarge: "£1200",
     priceSmall: "+ VAT",
     monthlyCarePlan: false,
@@ -282,7 +282,7 @@ export const pricing: Pricing[] = [
     id: 13,
     service: "seo",
     headingSmall: "Target New Areas",
-    headingLarge: "Local SEO Expansion",
+    headingLarge: "SEO Expansion",
     paragraph:
       "Designed for businesses looking to increase visibility across multiple locations and service areas.",
     priceLarge: "£750",
