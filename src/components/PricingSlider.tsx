@@ -2679,7 +2679,7 @@ export default function PricingSlider({ data }: PricingSliderProps) {
                       <span className="block text-base">{s.headingSmall}</span>
                       {s.headingLarge}
                     </h2>
-                    <p className="text-pretty md:max-w-[32ch] h-40">
+                    <p className="text-pretty md:max-w-[32ch] min-h-40 mb-4">
                       {s.paragraph}
                     </p>
                   </div>
