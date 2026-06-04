@@ -2423,6 +2423,8 @@ export default function PricingSlider({ data }: PricingSliderProps) {
     cardHeight = "48rem";
   } else if (data === "seo") {
     cardHeight = "46rem";
+  } else if (data === "graphic") {
+    cardHeight = "46rem";
   }
 
   const [expandedCardId, setExpandedCardId] = useState<number | null>(null);
