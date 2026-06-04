@@ -35,9 +35,9 @@ export default function PricingPage() {
       <div className="px-8 max-w-300 mx-auto mb-16">
         <h2 className="font-bold tracking-tight text-3xl sm:text-[40px] mbe-2">
           <span className="block w-fit text-2xl">Built for growth</span>
-          Websites That perform
+          Websites That Generate Enquiries
         </h2>
-        <p className="font-light max-w-[80ch] text-pretty">
+        <p className="font-light max-w-[80ch] text-pretty mb-4">
           Whether you&#39;re launching a new business or investing in long-term
           growth, our websites are designed to help you get found, build trust
           and generate more enquiries. Every website is bespoke, fast,
@@ -50,7 +50,7 @@ export default function PricingPage() {
           <span className="block w-fit text-2xl">Build Recognition</span>
           Brands That Get Remembered
         </h2>
-        <p className="font-light max-w-[80ch] text-pretty">
+        <p className="font-light max-w-[80ch] text-pretty mb-4">
           A strong brand helps customers recognise, trust and remember your
           business. From logos and visual identities to complete brand systems,
           we create brands that look professional, communicate clearly and
@@ -63,7 +63,7 @@ export default function PricingPage() {
           <span className="block w-fit text-2xl">Bring It To Life</span>
           Visuals That Build Trust
         </h2>
-        <p className="font-light max-w-[80ch] text-pretty">
+        <p className="font-light max-w-[80ch] text-pretty mb-4">
           Professional photography and video help showcase the quality of your
           work, the people behind your business and the services you provide. We
           create authentic visual content designed to engage audiences and
@@ -74,9 +74,9 @@ export default function PricingPage() {
       <div className="px-8 max-w-300 mx-auto mb-16">
         <h2 className="font-bold tracking-tight text-3xl sm:text-[40px] mbe-2">
           <span className="block w-fit text-2xl">Get Found</span>
-          Search That Works
+          SEO That Builds Visibility
         </h2>
-        <p className="font-light max-w-[80ch] text-pretty">
+        <p className="font-light max-w-[80ch] text-pretty mb-4">
           Being online isn&#39;t enough if customers can&#39;t find you. Our SEO
           services are designed to improve visibility, attract the right traffic
           and help your business appear where potential customers are already
@@ -89,7 +89,7 @@ export default function PricingPage() {
           <span className="block w-fit text-2xl">Support Your Brand</span>
           Design That Delivers
         </h2>
-        <p className="font-light max-w-[80ch] text-pretty">
+        <p className="font-light max-w-[80ch] text-pretty mb-4">
           From marketing materials and social graphics to custom illustrations
           and branded assets, we create design that supports your business,
           strengthens your brand and helps you communicate more effectively.
@@ -101,7 +101,7 @@ export default function PricingPage() {
           <span className="block w-fit text-2xl">Stay Visible</span>
           Content That Connects
         </h2>
-        <p className="font-light">
+        <p className="font-light max-w-[80ch] text-pretty mb-4">
           Consistent content helps businesses stay relevant, build trust and
           remain visible to potential customers. We create content designed to
           showcase your expertise, tell your story and support your wider
