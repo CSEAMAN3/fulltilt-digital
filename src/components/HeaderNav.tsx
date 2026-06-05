@@ -140,11 +140,11 @@ export default function HeaderNav() {
   };
 
   return (
-    <div>
+    <div className="">
       <motion.div animate={toggleNav ? "open" : "close"} initial="close">
         <motion.div
           id="mobile-navigation"
-          className="bg-brand-main-dark fixed top-0 left-0 z-50 w-screen h-screen overflow-y-auto"
+          className="bg-brand-accent-one fixed top-0 left-0 z-50 w-screen h-screen overflow-y-auto"
           variants={overlayVariants}
         >
           <motion.div
@@ -173,8 +173,8 @@ export default function HeaderNav() {
                       onClick={() => setToggleServices((prev) => !prev)}
                       className={`gradient-link flex w-fit items-center gap-3 font-bold text-4xl transition-colors duration-300 cursor-pointer ${
                         isActive || hasActiveService
-                          ? "text-accent-one"
-                          : "text-black hover:text-brand-accent-one"
+                          ? "text-brand-main-extra-dark"
+                          : "text-black hover:text-brand-main-extra-dark"
                       }`}
                       aria-expanded={toggleServices}
                       aria-controls="services-submenu"
@@ -212,8 +212,8 @@ export default function HeaderNav() {
                                 onClick={handleCloseNav}
                                 className={`gradient-link w-fit text-lg font-semibold transition-colors duration-300 ${
                                   isActive
-                                    ? "text-accent-one"
-                                    : "text-black hover:text-brand-accent-one"
+                                    ? "text-brand-main-extra-dark"
+                                    : "text-black hover:text-brand-main-extra-dark"
                                 }`}
                               >
                                 All Services
@@ -233,8 +233,8 @@ export default function HeaderNav() {
                                     onClick={handleCloseNav}
                                     className={`gradient-link w-fit text-lg transition-colors duration-300 ${
                                       isServiceActive
-                                        ? "text-brand-accent-one"
-                                        : "text-black hover:text-brand-accent-one"
+                                        ? "text-brand-main-extra-dark"
+                                        : "text-black hover:text-brand-main-extra-dark"
                                     }`}
                                   >
                                     {service.title}
@@ -257,8 +257,8 @@ export default function HeaderNav() {
                     onClick={handleCloseNav}
                     className={`gradient-link w-fit font-bold text-4xl transition-colors duration-300 ${
                       isActive
-                        ? "text-brand-accent-one"
-                        : "text-black hover:text-brand-accent-one"
+                        ? "text-brand-main-extra-dark"
+                        : "text-black hover:text-brand-main-extra-dark"
                     }`}
                   >
                     {item.title}
@@ -283,7 +283,7 @@ export default function HeaderNav() {
         aria-expanded={toggleNav}
       >
         <motion.div
-          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-brand-accent-one rounded-full"
+          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-brand-main-extra-dark rounded-full"
           style={{
             top: "0%",
             y: "0%",
@@ -303,7 +303,7 @@ export default function HeaderNav() {
           }}
         />
         <motion.div
-          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-brand-accent-one rounded-full"
+          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-brand-main-extra-dark rounded-full"
           style={{
             top: "50%",
             y: "-50%",
@@ -319,7 +319,7 @@ export default function HeaderNav() {
           }}
         />
         <motion.div
-          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-brand-accent-one rounded-full"
+          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-brand-main-extra-dark rounded-full"
           style={{
             top: "100%",
             y: "-100%",
