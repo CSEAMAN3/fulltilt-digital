@@ -21,7 +21,7 @@ export default function HomePage() {
             before. Lots is coming from the website, it&#39;s really allowed us
             to push on as a business.&#34;
           </p>
-          <p className="font-bold text-sm text-brand-main-dark">
+          <p className="font-bold text-sm text-brand-main-extra-dark">
             Andy Broadley - 1st Response Drainage
           </p>
         </div>

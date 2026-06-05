@@ -8,7 +8,7 @@ export default function Header() {
         <Link href="/" className="block w-fit">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/logo.svg"
+            src="/images/logo-dark.svg"
             alt="fulltilt digital logo"
             className="w-50 h-auto"
           />

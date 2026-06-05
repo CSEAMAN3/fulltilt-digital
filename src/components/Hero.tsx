@@ -17,12 +17,12 @@ export default function Hero() {
         </p>
         <Link
           href={"/contact"}
-          className="font-bold w-fit mx-auto mb-8 flex gap-2 group bg-brand-main py-4 px-8 rounded-full hover:bg-brand-main-dark transition-all duration-300"
+          className="font-bold w-fit mx-auto mb-8 flex gap-2 group bg-brand-main-extra-dark py-4 px-8 rounded-full hover:bg-brand-main-dark transition-all duration-300 text-white"
         >
           Lets build something great
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/arrow.svg"
+            src="/images/arrow-white.svg"
             alt=""
             width={10}
             style={{ width: "20px", height: "auto" }}

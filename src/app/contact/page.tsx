@@ -15,7 +15,7 @@ export default function ContactPage() {
         </p>
       </div>
       <div className="px-8">
-        <div className="bg-white p-8 relative -top-32 mx-auto shadow-lg max-w-240 border border-brand-main/50 rounded-sm">
+        <div className="bg-white p-8 relative -top-32 mx-auto shadow-lg max-w-240 border border-brand-main-dark rounded-sm">
           <h2 className="text-2xl text-balance mb-2 font-semibold max-w-3xl mx-auto">
             Contact us today
           </h2>

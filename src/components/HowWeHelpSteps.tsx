@@ -40,7 +40,7 @@ export default function HowWeHelpSteps({
           return (
             <div
               key={step.id}
-              className="bg-brand-accent-one p-4 rounded-xl border border-brand-main relative"
+              className="bg-brand-accent-one p-4 rounded-xl border border-brand-main-dark relative"
             >
               <button
                 onClick={() => toggleQuestion(step.id)}
