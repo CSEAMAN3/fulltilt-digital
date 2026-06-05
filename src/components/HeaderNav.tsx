@@ -144,7 +144,7 @@ export default function HeaderNav() {
       <motion.div animate={toggleNav ? "open" : "close"} initial="close">
         <motion.div
           id="mobile-navigation"
-          className="bg-brand-accent-one fixed top-0 left-0 z-50 w-screen h-screen overflow-y-auto"
+          className="bg-brand-main-extra-dark fixed top-0 left-0 z-50 w-screen h-screen overflow-y-auto"
           variants={overlayVariants}
         >
           <motion.div
@@ -173,8 +173,8 @@ export default function HeaderNav() {
                       onClick={() => setToggleServices((prev) => !prev)}
                       className={`gradient-link flex w-fit items-center gap-3 font-bold text-4xl transition-colors duration-300 cursor-pointer ${
                         isActive || hasActiveService
-                          ? "text-brand-main-extra-dark"
-                          : "text-black hover:text-brand-main-extra-dark"
+                          ? "text-white"
+                          : "text-black hover:text-white"
                       }`}
                       aria-expanded={toggleServices}
                       aria-controls="services-submenu"
@@ -212,8 +212,8 @@ export default function HeaderNav() {
                                 onClick={handleCloseNav}
                                 className={`gradient-link w-fit text-lg font-semibold transition-colors duration-300 ${
                                   isActive
-                                    ? "text-brand-main-extra-dark"
-                                    : "text-black hover:text-brand-main-extra-dark"
+                                    ? "text-white"
+                                    : "text-black hover:text-white"
                                 }`}
                               >
                                 All Services
@@ -233,8 +233,8 @@ export default function HeaderNav() {
                                     onClick={handleCloseNav}
                                     className={`gradient-link w-fit text-lg transition-colors duration-300 ${
                                       isServiceActive
-                                        ? "text-brand-main-extra-dark"
-                                        : "text-black hover:text-brand-main-extra-dark"
+                                        ? "text-white"
+                                        : "text-black hover:text-white"
                                     }`}
                                   >
                                     {service.title}
@@ -256,9 +256,7 @@ export default function HeaderNav() {
                     href={item.href}
                     onClick={handleCloseNav}
                     className={`gradient-link w-fit font-bold text-4xl transition-colors duration-300 ${
-                      isActive
-                        ? "text-brand-main-extra-dark"
-                        : "text-black hover:text-brand-main-extra-dark"
+                      isActive ? "text-white" : "text-black hover:text-white"
                     }`}
                   >
                     {item.title}
@@ -283,7 +281,7 @@ export default function HeaderNav() {
         aria-expanded={toggleNav}
       >
         <motion.div
-          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-brand-main-extra-dark rounded-full"
+          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-white rounded-full"
           style={{
             top: "0%",
             y: "0%",
@@ -303,7 +301,7 @@ export default function HeaderNav() {
           }}
         />
         <motion.div
-          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-brand-main-extra-dark rounded-full"
+          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-white rounded-full"
           style={{
             top: "50%",
             y: "-50%",
@@ -319,7 +317,7 @@ export default function HeaderNav() {
           }}
         />
         <motion.div
-          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-brand-main-extra-dark rounded-full"
+          className="absolute h-1 w-full bg-black transition-colors duration-300 group-hover:bg-white rounded-full"
           style={{
             top: "100%",
             y: "-100%",
